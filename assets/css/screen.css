@@ -2813,6 +2813,30 @@ textarea:focus {
     margin-left: 10px;
 }
 
+.site-signin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signin-form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 5vw;
+    text-align: center;
+}
+
+.signin-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.signin-box .button {
+    margin-left: 10px;
+}
+
 form[data-members-form] .button-loader,
 form[data-members-form] .message-success,
 form[data-members-form] .message-error {

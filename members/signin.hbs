@@ -1,15 +1,21 @@
 {{!< ../default}}
 
-<article class="post-content">
+<header class="site-header">
+    {{> site-header}}
+</header>
+<main id="site-main" class="site-main site-signup outer">
+    <div class="inner">
 
-    <div class="signin-page container">
-        <h1 class="post-content-title">Log in</h1>
+    {{^if @member}}
 
-        <form class="herosub" data-members-form="signin">
-            <div class="herosub-box">
-                <input data-members-email type="email" placeholder="Type your email..." required="true" autocomplete="false" />
+        {{!-- If logged out: Sign in --}}
+        <form class="signin-form" data-members-form="signin">
+            <h1>Welcome back!</h1>
+            <p>Sign into your account again for full access</p>
+            <div class="signup-box">
+                <input data-members-email type="email" placeholder="Your email" required="true" autocomplete="false" />
                 <button class="button primary" type="submit">
-                    <span class="button-content">Email login link</span>
+                    <span class="button-content">Continue</span>
                     <span class="button-loader">{{> "icons/loader"}}</span>
                 </button>
             </div>
@@ -17,6 +23,12 @@
             <div class="message-error">Please enter a valid email address!</div>
         </form>
 
-    </div>
+    {{else}}
 
-</article>
+        {{!-- If logged in: Redirect home --}}
+        <script>window.location = '/';</script>
+
+    {{/if}}
+
+    </div>
+</main>
