@@ -1,3 +1,22 @@
+/* Variables
+/* ---------------------------------------------------------- */
+
+:root {
+    /* Colours */
+    --blue: #3eb0ef;
+    --green: #a4d037;
+    --purple: #ad26b4;
+    --yellow: #fecd35;
+    --red: #f05230;
+    --darkgrey: #15171A;
+    --midgrey: #738a94;
+    --lightgrey: #c5d2d9;
+    --whitegrey: #e5eff5;
+    --pink: #fa3a57;
+    --brown: #a3821a;
+    --darkmode: color(var(--darkgrey) l(+2%));
+}
+
 /* Reset
 /* ---------------------------------------------------------- */
 
@@ -179,9 +198,9 @@ input,
 optgroup,
 select,
 textarea {
-    margin: 0;
-    color: inherit;
-    font: inherit;
+    margin: 0; /* 3 */
+    color: inherit; /* 1 */
+    font: inherit; /* 2 */
 }
 button {
     overflow: visible;
@@ -193,10 +212,12 @@ select {
 }
 button,
 html input[type="button"],
+/* 1 */
 input[type="reset"],
 input[type="submit"] {
-    cursor: pointer;
-    -webkit-appearance: button;
+    cursor: pointer; /* 3 */
+
+    -webkit-appearance: button; /* 2 */
 }
 button[disabled],
 html input[disabled] {
@@ -215,25 +236,25 @@ input:focus {
 }
 input[type="checkbox"],
 input[type="radio"] {
-    box-sizing: border-box;
-    padding: 0;
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
 }
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
     height: auto;
 }
 input[type="search"] {
-    box-sizing: content-box;
+    box-sizing: content-box; /* 2 */
 
-    -webkit-appearance: textfield;
+    -webkit-appearance: textfield; /* 1 */
 }
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
     -webkit-appearance: none;
 }
 legend {
-    padding: 0;
-    border: 0;
+    padding: 0; /* 2 */
+    border: 0; /* 1 */
 }
 textarea {
     overflow: auto;
@@ -260,9 +281,9 @@ html {
 }
 body {
     overflow-x: hidden;
-    color: color(var(--color-base) l(+20%));
+    color: color(var(--midgrey) l(-30%));
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 1.6em;
     font-weight: 400;
     font-style: normal;
@@ -277,7 +298,7 @@ body {
 
 ::selection {
     text-shadow: none;
-    background: #cbeafb;
+    background: color(var(--blue) lightness(+30%));
 }
 
 hr {
@@ -288,7 +309,7 @@ hr {
     padding: 0;
     height: 1px;
     border: 0;
-    border-top: 1px solid color(var(--color-border) l(+10%));
+    border-top: 1px solid color(var(--lightgrey) l(+10%));
 }
 
 audio,
@@ -300,15 +321,74 @@ video {
     vertical-align: middle;
 }
 
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
 p,
+ul,
+ol,
+dl,
 blockquote {
     margin: 0 0 1.5em 0;
+}
+
+ol,
+ul {
+    padding-left: 1.3em;
+    padding-right: 1.5em;
+}
+
+ol ol,
+ul ul,
+ul ol,
+ol ul {
+    margin: 0.5em 0 1em;
+}
+
+ul {
+    list-style: disc;
+}
+
+ol {
+    list-style: decimal;
+}
+
+ul,
+ol {
+    max-width: 100%;
+}
+
+li {
+    margin: 0.5em 0;
+    padding-left: 0.3em;
+    line-height: 1.6em;
+}
+
+dt {
+    float: left;
+    margin: 0 20px 0 0;
+    width: 120px;
+    color: var(--darkgrey);
+    font-weight: 500;
+    text-align: right;
+}
+
+dd {
+    margin: 0 0 5px 0;
+    text-align: left;
 }
 
 blockquote {
     margin: 1.5em 0;
     padding: 0 1.6em 0 1.6em;
-    border-left: var(--color-bg) 0.5em solid;
+    border-left: var(--whitegrey) 0.5em solid;
 }
 
 blockquote p {
@@ -336,14 +416,12 @@ blockquote cite a {
 }
 
 a {
-    color: color(var(--color-primary) l(-5%));
+    color: color(var(--blue) l(-5%));
     text-decoration: none;
-    transition: 0.4s ease;
 }
 
 a:hover {
     text-decoration: underline;
-    transition: 0.2s ease;
 }
 
 h1,
@@ -353,54 +431,57 @@ h4,
 h5,
 h6 {
     margin-top: 0;
-    line-height: 1.4;
-    font-weight: 700;
+    line-height: 1.15;
+    font-weight: 600;
     text-rendering: optimizeLegibility;
 }
 
 h1 {
     margin: 0 0 0.5em 0;
-    font-size: 5.7rem;
-    font-weight: 800;
+    font-size: 5.5rem;
+    font-weight: 600;
 }
 @media (max-width: 500px) {
     h1 {
-        font-size: 2.7rem;
+        font-size: 2.2rem;
     }
 }
 
 h2 {
     margin: 1.5em 0 0.5em 0;
-    font-size: 4rem;
+    font-size: 2.2rem;
 }
 @media (max-width: 500px) {
     h2 {
-        font-size: 2rem;
-    }
-}
-
-h3 {
-    margin: 1.5em 0 1em 0;
-    font-size: 3.2rem;
-}
-@media (max-width: 500px) {
-    h3 {
         font-size: 1.8rem;
     }
 }
 
+h3 {
+    margin: 1.5em 0 0.5em 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+@media (max-width: 500px) {
+    h3 {
+        font-size: 1.7rem;
+    }
+}
+
 h4 {
-    margin: 1.5em 0 1em 0;
-    font-size: 2.6rem;
+    margin: 1.5em 0 0.5em 0;
+    font-size: 1.6rem;
+    font-weight: 500;
 }
 
 h5 {
-    margin: 1.5em 0 1em 0;
-    font-size: 2.4rem;
+    margin: 1.5em 0 0.5em 0;
+    font-size: 1.4rem;
+    font-weight: 500;
 }
 
 h6 {
-    margin: 1.5em 0 1em 0;
-    font-size: 2.2rem;
+    margin: 1.5em 0 0.5em 0;
+    font-size: 1.4rem;
+    font-weight: 500;
 }
-

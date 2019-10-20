@@ -6,7 +6,6 @@ You'll notice that we *don't* use any JavsScript, or ghost_head / ghost_foot in 
 
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,7 +14,6 @@ You'll notice that we *don't* use any JavsScript, or ghost_head / ghost_foot in 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
 </head>
-
 <body class="error-template">
     <div class="site-wrapper">
 
@@ -23,9 +21,9 @@ You'll notice that we *don't* use any JavsScript, or ghost_head / ghost_foot in 
             <div class="inner">
                 <nav class="site-nav-center">
                     {{#if @site.logo}}
-                    <a class="site-nav-logo" href="{{@site.url}}"><img src="{{img_url @site.logo size="xs"}}" alt="{{@site.title}}" /></a>
+                        <a class="site-nav-logo" href="{{@site.url}}"><img src="{{img_url @site.logo size="xs"}}" alt="{{@site.title}}" /></a>
                     {{else}}
-                    <a class="site-nav-logo" href="{{@site.url}}">{{@site.title}}</a>
+                        <a class="site-nav-logo" href="{{@site.url}}">{{@site.title}}</a>
                     {{/if}}
                 </nav>
             </div>
@@ -45,14 +43,14 @@ You'll notice that we *don't* use any JavsScript, or ghost_head / ghost_foot in 
                     <h3>Theme errors</h3>
                     <ul class="error-stack-list">
                         {{#foreach errorDetails}}
-                        <li>
-                            <em class="error-stack-function">{{{rule}}}</em>
+                            <li>
+                                <em class="error-stack-function">{{{rule}}}</em>
 
-                            {{#foreach failures}}
-                            <p><span class="error-stack-file">Ref: {{ref}}</span></p>
-                            <p><span class="error-stack-file">Message: {{message}}</span></p>
-                            {{/foreach}}
-                        </li>
+                                {{#foreach failures}}
+                                    <p><span class="error-stack-file">Ref: {{ref}}</span></p>
+                                    <p><span class="error-stack-file">Message: {{message}}</span></p>
+                                {{/foreach}}
+                            </li>
                         {{/foreach}}
                     </ul>
                 </section>
@@ -62,5 +60,4 @@ You'll notice that we *don't* use any JavsScript, or ghost_head / ghost_foot in 
         </main>
     </div>
 </body>
-
 </html>
