@@ -1,6 +1,7 @@
 routes:
-  /account/: account
-  /signin/: signin
+  /signup/: members/signup
+  /signin/: members/signin
+  /account/: members/account
 
 collections:
   /:

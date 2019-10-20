@@ -1,6 +1,10 @@
 <nav class="site-nav">
     <div class="site-nav-left">
-        {{> "site-logo"}}
+        {{#if @site.logo}}
+            <a class="site-nav-logo" href="{{@site.url}}"><img src="{{@site.logo}}" alt="{{@site.title}}" /></a>
+        {{else}}
+            <a class="site-nav-logo" href="{{@site.url}}">{{@site.title}}</a>
+        {{/if}}
         <div class="site-nav-content">
             {{#if @site.navigation}}
                 {{navigation}}
@@ -12,11 +16,11 @@
     </div>
     <div class="site-nav-right">
         {{#if @member}}
-            {{@member.email}}
-            <a class="button primary signout-button" href="#signout" data-members-signout>Log out</a>
+            <a class="account-link" href="/account/">Account</a>
+            <a class="button header-cta" href="#signout" data-members-signout>Log out</a>
         {{else}}
             <a class="signin-link" href="/signin/">Log in</a>
-            <a class="button primary subscribe-button" href="#subscribe">Subscribe</a>
+            <a class="button primary header-cta" href="/signup/">Subscribe</a>
         {{/if}}
     </div>
 </nav>

@@ -1,0 +1,45 @@
+{{!< ../default}}
+
+<header class="site-header">
+    {{> site-header}}
+</header>
+<main id="site-main" class="site-main site-signup outer">
+    <div class="inner">
+
+    {{^if @member}}
+
+        {{!-- If logged out (not a member): Sign up --}}
+        <form class="signup-form" data-members-form="signup">
+            <h1>{{@site.title}}</h1>
+            <p>{{@site.description}}</p>
+            <div class="signup-box">
+                <input data-members-email type="email" placeholder="Type your email..." required="true" autocomplete="false" />
+                <button class="button primary" type="submit">
+                    <span class="button-content">Sign up</span>
+                    <span class="button-loader">{{> "icons/loader"}}</span>
+                </button>
+            </div>
+            <div class="message-success"><strong>Great!</strong> Check your inbox and click the link to confirm your subscription</div>
+            <div class="message-error">Please enter a valid email address!</div>
+        </form>
+
+    {{else}}
+
+        {{^if @member.paid}}
+
+            {{!-- If logged in, but not paying yet: Check out --}}
+            <a class="pricingtable-plan" href="#" data-members-plan="Monthly">Checkout monthly</a>
+            or
+            <a class="pricingtable-plan" href="#" data-members-plan="Yearly">Checkout yearly</a>
+
+        {{else}}
+
+            {{!-- If logged in, and paying: Redirect home --}}
+            <script>window.location = '/';</script>
+
+        {{/if}}
+
+    {{/if}}
+
+    </div>
+</main>

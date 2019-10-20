@@ -1,41 +1,50 @@
-{{!< default}}
+{{!< ../default}}
 
-{{#if @member}}
-    {{^if @member.paid}}
+<header class="site-header">
+    {{> site-header}}
+</header>
+<main id="site-main" class="site-main site-signup outer">
+    <div class="inner">
 
-        {{!-- If logged in but not paying --}}
-        <article class="post-content {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
-            <div class="container">
-                <div class="content">
-                    <form class="authbox">
-                        <h1 class="authbox-title">You are not a subscriber</h1>
-                        <p>The email address <strong>{{@member.email}}</strong> is on the list for free updates, but does not have a paid subscription.</p>
-                        <div class="authbox-signup">
-                            <a class="button primary" href="/">
-                                <span class="button-content">Subscribe</span>
-                            </a>
-                        </div>
-                    </form>
+    {{#if @member}}
+        {{^if @member.paid}}
+
+            {{!-- If logged in but not paying --}}
+            <article class="post-content {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
+                <div class="container">
+                    <div class="content">
+                        <form class="authbox">
+                            <h1 class="authbox-title">You are not a subscriber</h1>
+                            <p>The email address <strong>{{@member.email}}</strong> is on the list for free updates, but does not have a paid subscription.</p>
+                            <div class="authbox-signup">
+                                <a class="button primary" href="/signup/">
+                                    <span class="button-content">Subscribe</span>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </article>
+            </article>
 
+        {{else}}
+
+            {{!-- If already on a paying account --}}
+            <article class="post-content {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
+                <div class="container">
+                    <div class="content">
+                        <form class="authbox">
+                            <h1 class="authbox-title">You are a subscriber!</h1>
+                            <p>The email address <strong>{{@member.email}}</strong> is on the list for free updates, and has a paid subscription.</p>
+                        </form>
+                    </div>
+                </div>
+            </article>
+
+        {{/if}}
     {{else}}
-
-        {{!-- If already on a paying account --}}
-        <article class="post-content {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
-            <div class="container">
-                <div class="content">
-                    <form class="authbox">
-                        <h1 class="authbox-title">You are a subscriber!</h1>
-                        <p>The email address <strong>{{@member.email}}</strong> is on the list for free updates, and has a paid subscription.</p>
-                    </form>
-                </div>
-            </div>
-        </article>
-
+        {{!-- If not logged in, log in --}}
+        <script>window.location = '/signin/';</script>
     {{/if}}
-{{else}}
-    {{!-- If not logged in, log in --}}
-    <script>window.location = '/signin/';</script>
-{{/if}}
+
+    </div>
+</main>
