@@ -2896,7 +2896,18 @@ form[data-members-form].error .message-error {
     display: block;
 }
 
+.site-account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vw;
+}
 
+.account-box {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
 
 .header-cta {
     margin-left: 15px;
