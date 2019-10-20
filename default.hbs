@@ -23,8 +23,8 @@
 <div class="site-wrapper">
 
     <header class="site-head">
-        <div class="site-head-container">
-            <nav id="swup" class="site-head-left">
+        <div class="site-head-container inner">
+            <nav class="site-head-left">
                 {{navigation}}
             </nav>
             <div class="site-head-center">
@@ -48,16 +48,20 @@
         </div>
     </header>
 
-    <main id="site-main" class="site-main">
+    <main class="site-main">
+        <div class="site-main-container inner">
 
         {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
         {{{body}}}
 
+        </div>
     </main>
 
     {{!-- The footer at the very bottom of the screen --}}
     <footer class="site-foot">
-        &copy; {{date format="YYYY"}} <a href="{{@site.url}}">{{@site.title}}</a> &mdash; Published with <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+        <div class="site-foot-container inner">
+            &copy; {{date format="YYYY"}} <a href="{{@site.url}}">{{@site.title}}</a> &mdash; Published with <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+        </div>
     </footer>
 
 </div>
