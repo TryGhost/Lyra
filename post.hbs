@@ -85,28 +85,26 @@ into the {body} of the default.hbs template --}}
                 </div>
             </header>
 
-
-            {{#if feature_image}}
-            <figure class="post-full-image">
-                {{!-- This is a responsive image, it loads different sizes depending on device
-                https://medium.freecodecamp.org/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433 --}}
-                <img
-                    srcset="{{img_url feature_image size="s"}} 300w,
-                            {{img_url feature_image size="m"}} 600w,
-                            {{img_url feature_image size="l"}} 1000w,
-                            {{img_url feature_image size="xl"}} 2000w"
-                    sizes="(max-width: 800px) 400px,
-                        (max-width: 1170px) 1170px,
-                            2000px"
-                    src="{{img_url feature_image size="xl"}}"
-                    alt="{{title}}"
-                />
-            </figure>
-            {{/if}}
-
-            {{!-- if the user has access to this post, show it to them --}}
             {{#if access}}
+            {{!-- if the user has access to this post, show it to them --}}
 
+                {{#if feature_image}}
+                <figure class="post-full-image">
+                    {{!-- This is a responsive image, it loads different sizes depending on device
+                    https://medium.freecodecamp.org/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433 --}}
+                    <img
+                        srcset="{{img_url feature_image size="s"}} 300w,
+                                {{img_url feature_image size="m"}} 600w,
+                                {{img_url feature_image size="l"}} 1000w,
+                                {{img_url feature_image size="xl"}} 2000w"
+                        sizes="(max-width: 800px) 400px,
+                            (max-width: 1170px) 1170px,
+                                2000px"
+                        src="{{img_url feature_image size="xl"}}"
+                        alt="{{title}}"
+                    />
+                </figure>
+                {{/if}}
                 <section class="post-full-content">
                     <div class="post-content">
                         {{content}}
@@ -114,11 +112,25 @@ into the {body} of the default.hbs template --}}
                 </section>
 
             {{else}}
+            {{!-- if the user does not have access, show them an upgrade CTA --}}
+
                 <section class="post-full-content">
                     <div class="post-content">
-                        <p>This is a members only post</p>
+                        <p>You don't have access to this post on <strong>{{@site.title}}</strong> at the moment, but if you upgrade your account you'll be able to see the whole thing, as well as all the other posts in the archive! Subscribing only takes a few seconds and will give you immediate access.</p>
                     </div>
+                    <aside class="post-upgrade-cta">
+                        <div class="post-upgrade-cta-content">
+                            {{#if @member}}
+                            <h2>This post is for paying subscribers only</h2>
+                            {{else}}
+                            <h2>This post is for subscribers only</h2>
+                            {{/if}}
+                            <a class="button large primary" href="/signup/">Subscribe now</a>
+                            <p><small>Already have an account? <a href="/signin/">Sign in</a></small></p>
+                        </div>
+                    </aside>
                 </section>
+
             {{/if}}
 
             {{!--
