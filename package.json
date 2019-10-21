@@ -1,7 +1,7 @@
 {
-    "name": "hydra",
-    "description": "A starter theme for Ghost.",
-    "demo": "https://hydra.ghost.io",
+    "name": "lyra",
+    "description": "A premium publication theme for Ghost.",
+    "demo": "https://lyra.ghost.io",
     "version": "1.0.0",
     "engines": {
         "ghost": ">=3.0.0",

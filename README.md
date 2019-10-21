@@ -1,11 +1,11 @@
-# Hydra
+# Lyra
 
 A paid-members publication for Ghost
 
 &nbsp;
 
 <p>This theme includes a custom <code>routes.yaml</code> file which needs to be uploaded inside Ghost Admin, under <code>Labs > Custom Routes</code></p>
-<p>Once you've uploaded the custom routes file to Ghost Admin, these instructions will automatically disappear - and all of your signup/signin routes will work with the included template files in this theme.</p>
+
 <p>If you need help, check out the <a href="https://ghost.org/docs/members/">Ghost members documentation</a> or chat with other Ghost users on <a href="https://forum.ghost.org">Ghost forum</a>.</p>
 
 
