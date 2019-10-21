@@ -2655,38 +2655,23 @@ Usage (In Ghost editor):
     text-decoration: none;
 }
 
-.site-footer-nav {
-    display: flex;
+.site-footer .copyright a {
+    padding: 0 0 0 15px;
 }
 
-.site-footer-nav a {
-    position: relative;
-    margin-left: 20px;
-}
-
-.site-footer-nav a:before {
-    content: "";
-    position: absolute;
-    top: 11px;
-    left: -11px;
-    display: block;
-    width: 2px;
-    height: 2px;
-    background: #fff;
-    border-radius: 100%;
-}
-
-.site-footer-nav a:first-of-type:before {
-    display: none;
+.site-footer .copyright a:first-child {
+    padding: 0;
 }
 
 @media (max-width: 650px) {
     .site-footer-content {
         flex-direction: column;
     }
-
-    .site-footer-nav a:first-child {
-        margin-left: 0;
+    .site-footer .copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
     }
 }
 
@@ -2701,7 +2686,7 @@ input[type="tel"],
 input[type="search"],
 input[type="url"],
 select {
-    height: 30px;
+    height: 44px;
     background: #fff;
     border-radius: 5px;
     border: none;
@@ -2727,14 +2712,14 @@ textarea:focus {
 
 .button {
     display: inline-block;
-    height: 30px;
-    padding: 0 1.2rem;
+    height: 44px;
+    padding: 0 1.8rem;
     border: 0;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 30px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 42px;
     text-align: center;
     text-decoration: none;
     white-space: nowrap;
@@ -2747,15 +2732,15 @@ textarea:focus {
 }
 
 .button.small {
-    height: calc(30px * 0.9);
-    line-height: calc(30px * 0.9);
-    padding: 0 1.5rem;
-    font-size: 1.2rem;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 1.1rem;
+    font-size: 1.4rem;
 }
 
 .button.large {
-    height: calc(30px * 1.14);
-    line-height: calc(30px * 1.14);
+    height: calc(44px * 1.14);
+    line-height: calc(44px * 1.14);
     padding: 0 3rem;
     font-size: 1.6rem;
 }
@@ -2769,13 +2754,13 @@ textarea:focus {
 .button {
     color: var(--blue) !important;
     background-color: transparent;
-    box-shadow: inset 0 0 0 1px var(--blue);
+box-shadow: inset 0 0 0 1px var(--blue);
 }
 
 .button:hover {
     text-decoration: none;
     color: color(var(--blue) l(-15%)) !important;
-    box-shadow: inset 0 0 0 2px color(var(--blue) l(-10%));
+    box-shadow: inset 0 0 0 1px color(var(--blue) l(-10%));
     transition: 0.2s ease;
 }
 
@@ -2825,6 +2810,18 @@ textarea:focus {
     max-width: 500px;
     margin: 0 auto 5vw;
     text-align: center;
+}
+
+
+.signin-title {
+    margin: 0;
+    font-size: 4rem;
+    line-height: 1.5em;
+}
+
+.signin-form p {
+    color: var(--midgrey);
+    font-size: 1.3em;
 }
 
 .signin-box {
