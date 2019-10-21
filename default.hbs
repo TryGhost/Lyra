@@ -18,7 +18,7 @@
     {{ghost_head}}
 
 </head>
-<body class="{{body_class}} subscribe-success">
+<body class="{{body_class}}">
 
     <div class="site-wrapper">
 
@@ -44,10 +44,7 @@
 
     </div>
 
-    <div class="subscribe-success-message">
-        <a class="subscribe-close" href="javascript:;"></a>
-        You've successfully subscribed to {{@site.title}}!
-    </div>
+   {{> "notifications"}}
 
     <div id="subscribe" class="subscribe-overlay">
         <a class="subscribe-close" href="#"></a>
@@ -120,9 +117,23 @@
             if (action == 'subscribe') {
                 $('body').addClass("subscribe-success");
             }
+            if (action == 'signup') {
+                $('body').addClass("signup-success");
+            }
+            if (action == 'signin') {
+                $('body').addClass("signin-success");
+            }
+            if (action == 'checkout') {
+                $('body').addClass("checkout-success");
+            }
 
-            $('.subscribe-success-message .subscribe-close').click(function () {
-                $('.subscribe-success-message').addClass('close');
+            $('.notification-close').click(function () {
+                $(this).parent().addClass('closed');
+                var uri = window.location.toString();
+                if (uri.indexOf("?") > 0) {
+                    var clean_uri = uri.substring(0, uri.indexOf("?"));
+                    window.history.replaceState({}, document.title, clean_uri);
+                }
             });
 
             // Reset form on opening subscrion overlay

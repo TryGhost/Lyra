@@ -2427,7 +2427,7 @@ Usage (In Ghost editor):
 /* 10. Subscribe Message and Overlay
 /* ---------------------------------------------------------- */
 
-.subscribe-success-message {
+.notification {
     position: fixed;
     top: 0;
     right: 0;
@@ -2440,20 +2440,33 @@ Usage (In Ghost editor):
     background: color(var(--green) l(-5%));
     transition: all 0.35s cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
     transform: translateY(-175%);
+    visibility: hidden;
 }
 
-.subscribe-success .subscribe-success-message {
+.subscribe-success .notification-subscribe {
+    visibility: visible;
+    transform: translateY(0);
+}
+.signup-success .notification-signup {
+    visibility: visible;
+    transform: translateY(0);
+}
+.signin-success .notification-signin {
+    visibility: visible;
+    transform: translateY(0);
+}
+.checkout-success .notification-checkout {
     visibility: visible;
     transform: translateY(0);
 }
 
-.subscribe-success-message.close {
+.notification.closed {
     visibility: hidden;
     transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
     transform: translateY(-175%);
 }
 
-.subscribe-close {
+.notification-close {
     position: absolute;
     top: 0;
     right: 0;
@@ -2462,11 +2475,7 @@ Usage (In Ghost editor):
     display: block;
 }
 
-.subscribe-close:before:hover {
-    cursor: pointer;
-}
-
-.subscribe-close:before {
+.notification-close:before {
     content: "";
     position: absolute;
     top: 32px;
@@ -2479,7 +2488,7 @@ Usage (In Ghost editor):
     transform: rotate(45deg);
 }
 
-.subscribe-close:after {
+.notification-close:after {
     content: "";
     position: absolute;
     top: 32px;
@@ -2492,9 +2501,6 @@ Usage (In Ghost editor):
     transform: rotate(-45deg);
 }
 
-.subscribe-close:hover {
-    cursor: default;
-}
 
 .subscribe-overlay {
     position: fixed;
