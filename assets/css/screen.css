@@ -2920,6 +2920,8 @@ box-shadow: inset 0 0 0 1px var(--blue);
     border-top: var(--blue) 6px solid;
     text-align: left;
     border-radius: 10px;
+    color: color(var(--midgrey) l(-30%));
+    background: #fff;
     box-shadow: 0 0 0 1px rgba(39,44,49,.03), 0 0 3px rgba(39,44,49,.05), 0 5px 22px -10px rgba(39,44,49,.12), 0 25px 30px -25px rgba(39,44,49,.05);
 }
 
