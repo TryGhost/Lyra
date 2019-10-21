@@ -465,6 +465,16 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     color: #fff;
 }
 
+.button.small.signout-link {
+    color: #fff;
+    box-shadow: #fff 0 0 0 1px inset;
+    opacity: 0.8;
+}
+
+.button.small.signout-link:hover {
+    opacity: 1;
+}
+
 /* Special behaviors for home navigation */
 
 .home-template .site-nav-main {
@@ -2763,20 +2773,20 @@ textarea:focus {
 }
 
 .button {
-    color: var(--blue) !important;
+    color: var(--blue);
     background-color: transparent;
-box-shadow: inset 0 0 0 1px var(--blue);
+    box-shadow: inset 0 0 0 1px var(--blue);
 }
 
 .button:hover {
     text-decoration: none;
-    color: color(var(--blue) l(-15%)) !important;
+    color: color(var(--blue) l(-15%));
     box-shadow: inset 0 0 0 1px color(var(--blue) l(-10%));
     transition: 0.2s ease;
 }
 
 .button.primary {
-    color: #fff !important;
+    color: #fff;
     background-color: var(--blue);
     box-shadow: none;
 }
