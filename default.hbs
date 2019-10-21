@@ -112,6 +112,7 @@
 
         // Give the parameter a variable name
         var action = getParameterByName('action');
+        var stripe = getParameterByName('stripe');
 
         $(document).ready(function () {
             if (action == 'subscribe') {
@@ -126,7 +127,7 @@
             if (action == 'signin') {
                 $('body').addClass("signin-success");
             }
-            if (action == 'success') {
+            if (stripe == 'success') {
                 $('body').addClass("checkout-success");
             }
 
