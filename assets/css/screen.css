@@ -2975,7 +2975,7 @@ textarea:focus {
 
 .checkout-plan-header strong {
     color: var(--darkgrey);
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     font-weight: 500;
 }
 
@@ -3193,7 +3193,7 @@ form[data-members-form].error .message-error {
 .post-upgrade-cta a:hover {
     color: #fff;
     text-decoration: underline;
-    box-shadow: none;
+    box-shadow: none !important;
 }
 
 
