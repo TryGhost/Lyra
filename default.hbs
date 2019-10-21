@@ -18,7 +18,7 @@
     {{ghost_head}}
 
 </head>
-<body class="{{body_class}}">
+<body class="{{body_class}} subscribe-success">
 
     <div class="site-wrapper">
 
@@ -44,8 +44,6 @@
 
     </div>
 
-    {{!-- The big email subscribe modal content --}}
-    {{#if @labs.members}}
     <div class="subscribe-success-message">
         <a class="subscribe-close" href="javascript:;"></a>
         You've successfully subscribed to {{@site.title}}!
@@ -79,7 +77,6 @@
             </div>
         </div>
     </div>
-    {{/if}}
 
     <script>
         var images = document.querySelectorAll('.kg-gallery-image img');

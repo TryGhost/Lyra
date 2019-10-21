@@ -10,15 +10,16 @@
 
         {{!-- If logged out (not a member): Sign up --}}
         <form class="signup-form" data-members-form="signup">
-            <h1>{{@site.title}}</h1>
+            <h1 class="signup-title">Signup to {{@site.title}}</h1>
             <p>{{@site.description}}</p>
             <div class="signup-box">
                 <input data-members-email type="email" placeholder="Type your email..." required="true" autocomplete="false" />
                 <button class="button primary" type="submit">
-                    <span class="button-content">Sign up</span>
+                    <span class="button-content">Continue</span>
                     <span class="button-loader">{{> "icons/loader"}}</span>
                 </button>
             </div>
+            <p><small>Already have an account? <a href="/signin/">Sign in</a></small></p>
             <div class="message-success"><strong>Great!</strong> Check your inbox and click the link to confirm your subscription</div>
             <div class="message-error">Please enter a valid email address!</div>
         </form>
