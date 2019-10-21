@@ -3180,6 +3180,10 @@ form[data-members-form].error .message-error {
         border-bottom-color: color(var(--darkmode) l(+8%));
     }
 
+    .post-visibility {
+        color: var(--lightgrey);
+    }
+
     .author-profile-image {
         background: var(--darkmode);
     }
