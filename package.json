@@ -43,6 +43,7 @@
     "bugs": "https://github.com/TryGhost/Starter/issues",
     "contributors": "https://github.com/TryGhost/Starter/graphs/contributors",
     "devDependencies": {
+        "@tryghost/release-utils": "^0.3.2",
         "autoprefixer": "9.6.1",
         "cssnano": "4.1.10",
         "gscan": "^2.7.0",
