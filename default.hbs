@@ -118,12 +118,15 @@
                 $('body').addClass("subscribe-success");
             }
             if (action == 'signup') {
+                window.location = '/signup/?action=checkout';
+            }
+            if (action == 'checkout') {
                 $('body').addClass("signup-success");
             }
             if (action == 'signin') {
                 $('body').addClass("signin-success");
             }
-            if (action == 'checkout') {
+            if (action == 'success') {
                 $('body').addClass("checkout-success");
             }
 
