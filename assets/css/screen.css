@@ -3016,8 +3016,12 @@ form[data-members-form].error .message-error {
 /* ---------------------------------------------------------- */
 @media (prefers-color-scheme: dark) {
     body {
-        color: rgba(255, 255, 255, 0.75);
+        color: rgba(255, 255, 255, 0.80);
         background: var(--darkmode);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: #fff;
     }
 
     img {
