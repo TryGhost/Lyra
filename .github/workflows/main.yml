@@ -1,0 +1,2 @@
+- name: Deploy Ghost Theme
+  uses: TryGhost/action-deploy-theme@v1.1.0
