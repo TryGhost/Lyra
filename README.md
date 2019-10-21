@@ -1,10 +1,8 @@
 # Lyra
 
-A paid-members publication for Ghost
+A paid-members publication for Ghost. This theme includes a custom <code>routes.yaml</code> file which needs to be uploaded inside Ghost Admin, under `Labs > Custom Routes`
 
-&nbsp;
-
-<p>This theme includes a custom <code>routes.yaml</code> file which needs to be uploaded inside Ghost Admin, under <code>Labs > Custom Routes</code></p>
+![screenshot](https://user-images.githubusercontent.com/120485/67228748-1fdd1400-f464-11e9-921f-ecbf5f412ed5.png)
 
 <p>If you need help, check out the <a href="https://ghost.org/docs/members/">Ghost members documentation</a> or chat with other Ghost users on <a href="https://forum.ghost.org">Ghost forum</a>.</p>
 
