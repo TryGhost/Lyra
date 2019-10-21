@@ -2898,39 +2898,30 @@ form[data-members-form] .message-error {
     margin-right: 5px;
     height: 15px;
     width: 15px;
-}
-.message-success svg {
     fill: #fff;
-}
-.message-error svg {
-    fill: var(--color-primary);
 }
 
 form[data-members-form].success .message-success,
 form[data-members-form].error .message-error {
     position: fixed;
-    top: 20px;
-    left: 6vw;
-    right: 6vw;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 9999;
-    max-width: calc(1400px - 12vw);
-    margin: 0 auto;
-    padding: 10px 0;
+    padding: 20px;
     color: #fff;
     font-size: 1.4rem;
     line-height: 1.5em;
     font-weight: 500;
     text-align: center;
-    background: var(--color-base);
-    border-radius: var(--radius);
+    background: color(var(--green) l(-5%));
 }
 form[data-members-form].success .message-success {
-    background: var(--color-success);
+    background: color(var(--green) l(-5%));
 }
 form[data-members-form].error .message-error {
-    color: var(--color-primary);
-    background: #fff;
-    box-shadow: var(--color-primary) 0 0 0 1px;
+    color: #fff;
+    background: var(--red);
 }
 
 form[data-members-form] .button {
@@ -3210,5 +3201,15 @@ form[data-members-form].error .message-error {
 
     .subscribe-form .success .message-success {
         color: color(var(--green) l(+5%) s(-5%));
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="search"],
+    input[type="url"],
+    select {
+        color: var(--darkgrey);
     }
 }
