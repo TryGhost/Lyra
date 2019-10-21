@@ -34,11 +34,11 @@ into the {body} of the default.hbs template --}}
                 <div class="post-full-byline">
 
                     <section class="post-full-byline-content">
-                    
+
                         <ul class="author-list">
                             {{#foreach authors}}
                             <li class="author-list-item">
-                    
+
                                 <div class="author-card">
                                     {{#if profile_image}}
                                     <img class="author-profile-image" src="{{img_url profile_image size="xs"}}" alt="{{name}}" />
@@ -58,7 +58,7 @@ into the {body} of the default.hbs template --}}
                                         {{/if}}
                                     </div>
                                 </div>
-                    
+
                                 {{#if profile_image}}
                                 <a href="{{url}}" class="author-avatar">
                                     <img class="author-profile-image" src="{{img_url profile_image size="xs"}}" alt="{{name}}" />
@@ -66,11 +66,11 @@ into the {body} of the default.hbs template --}}
                                 {{else}}
                                 <a href="{{url}}" class="author-avatar author-profile-image">{{> "icons/avatar"}}</a>
                                 {{/if}}
-                    
+
                             </li>
                             {{/foreach}}
                         </ul>
-                    
+
                         <section class="post-full-byline-meta">
                             <h4 class="author-name">{{authors}}</h4>
                             <div class="byline-meta-content">
@@ -78,12 +78,13 @@ into the {body} of the default.hbs template --}}
                                 <span class="byline-reading-time"><span class="bull">&bull;</span> {{reading_time}}</span>
                             </div>
                         </section>
-                    
+
                     </section>
 
-                
+
                 </div>
             </header>
+
 
             {{#if feature_image}}
             <figure class="post-full-image">
@@ -103,15 +104,21 @@ into the {body} of the default.hbs template --}}
             </figure>
             {{/if}}
 
-            <section class="post-full-content">
-                <div class="post-content">
-                    {{content}}
-                </div>
-            </section>
+            {{!-- if the user has access to this post, show it to them --}}
+            {{#if access}}
 
-            {{!-- Email subscribe form at the bottom of the page --}}
-            {{#if @labs.members}}
-                {{> subscribe-form}}
+                <section class="post-full-content">
+                    <div class="post-content">
+                        {{content}}
+                    </div>
+                </section>
+
+            {{else}}
+                <section class="post-full-content">
+                    <div class="post-content">
+                        <p>This is a members only post</p>
+                    </div>
+                </section>
             {{/if}}
 
             {{!--
