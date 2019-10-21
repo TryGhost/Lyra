@@ -6,9 +6,14 @@
 <main id="site-main" class="site-main site-signin outer">
     <div class="inner">
 
-    {{^if @member}}
+    {{#if @member}}
 
-        {{!-- If logged out: Sign in --}}
+        {{!-- Logged in: Redirect home --}}
+        <script>window.location = '/';</script>
+
+    {{else}}
+
+        {{!-- Not logged in: Signin form --}}
         <form class="signin-form" data-members-form="signin">
             <h1 class="signin-title">Welcome back!</h1>
             <p>Sign into your account again for full access</p>
@@ -23,11 +28,6 @@
             <div class="message-success"><strong>Great!</strong> Check your inbox and click the link to complete signin</div>
             <div class="message-error">Please enter a valid email address!</div>
         </form>
-
-    {{else}}
-
-        {{!-- If logged in: Redirect home --}}
-        <script>window.location = '/';</script>
 
     {{/if}}
 

@@ -8,12 +8,12 @@
 
     {{#if @member.paid}}
 
-        {{!-- Logged in, paying member: --}}
+        {{!-- Logged in, paying member: Redirect home --}}
         <script>window.location = '/';</script>
 
     {{else if @member}}
 
-        {{!-- Logged in, not paying: --}}
+        {{!-- Logged in, not paying: Check out --}}
         <div class="checkout-form">
             <h1 class="checkout-title">Choose your subscription</h1>
             <p>Unlock full access to {{@site.title}} and see the entire library of members-only content & updates</p>
@@ -54,7 +54,7 @@
 
     {{else}}
 
-        {{!-- Not logged in: --}}
+        {{!-- Not logged in: Sign up --}}
         <form class="signup-form" data-members-form="signup">
             <h1 class="signup-title">Signup to {{@site.title}}</h1>
             <p>{{@site.description}}</p>
