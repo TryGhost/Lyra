@@ -461,7 +461,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     flex-shrink: 0;
     display: flex;
     align-items: center;
-    padding: 10px 0;
+    padding: 9px 0 10px;
     height: 64px;
     font-size: 1.4rem;
     line-height: 1.0em;
@@ -513,7 +513,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     }
 
     .site-nav-main .site-nav-right {
-        padding: 10px 20px 10px 5px;
+        padding: 9px 20px 10px 5px;
     }
 }
 
