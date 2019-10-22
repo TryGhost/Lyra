@@ -314,7 +314,7 @@ body {
 
 @media (max-width: 700px) {
     .site-header-background:not(.responsive-header-img) .site-nav-left:after,
-    .site-nav-main .site-nav:after {
+    .site-nav-main .site-nav-left:after {
         content: "";
         position: absolute;
         top: 0;
@@ -464,7 +464,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     padding: 10px 0;
     height: 64px;
     font-size: 1.4rem;
-    line-height: 1.2em;
+    line-height: 1.0em;
 }
 
 .site-nav-right a {
@@ -512,6 +512,9 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
         padding-left: 5vw;
     }
 
+    .fixed-nav-active .site-nav-right {
+        padding: 10px;
+    }
 }
 
 
