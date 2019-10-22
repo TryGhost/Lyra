@@ -290,9 +290,9 @@ body {
 }
 
 .site-nav-left {
+    position: relative;
     flex: 1 0 auto;
     display: flex;
-    position: relative;
 }
 
 .site-nav-left-content {
