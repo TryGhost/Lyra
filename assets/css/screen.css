@@ -512,8 +512,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
         padding-left: 5vw;
     }
 
-    .fixed-nav-active .site-nav-right {
-        padding: 10px;
+    .site-nav-main .site-nav-right {
+        padding: 10px 20px 10px 5px;
     }
 }
 
