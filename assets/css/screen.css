@@ -290,6 +290,12 @@ body {
 }
 
 .site-nav-left {
+    position: relative;
+    flex: 1 0 auto;
+    display: flex;
+}
+
+.site-nav-left-content {
     flex: 1 0 auto;
     display: flex;
     align-items: center;
@@ -307,8 +313,8 @@ body {
 }
 
 @media (max-width: 700px) {
-    .site-header-background:not(.responsive-header-img) .site-nav:after,
-    .site-nav-main .site-nav:after {
+    .site-header-background:not(.responsive-header-img) .site-nav-left:after,
+    .site-nav-main .site-nav-left:after {
         content: "";
         position: absolute;
         top: 0;
@@ -317,9 +323,9 @@ body {
         height: 100%;
     }
 
-    .site-header-background:not(.responsive-header-img) .site-nav:after,
-    .site-nav-main .site-nav:after {
-        right: 0;
+    .site-header-background:not(.responsive-header-img) .site-nav-left:after,
+    .site-nav-main .site-nav-left:after {
+        right: 10px;
         background: linear-gradient(to right, color(var(--darkgrey) l(-5%) a(0)) 0%,color(var(--darkgrey) l(-5%)) 100%);
     }
 
@@ -455,10 +461,10 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     flex-shrink: 0;
     display: flex;
     align-items: center;
-    padding: 10px 0;
+    padding: 9px 0 10px;
     height: 64px;
     font-size: 1.4rem;
-    line-height: 1.2em;
+    line-height: 1.0em;
 }
 
 .site-nav-right a {
@@ -506,6 +512,9 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
         padding-left: 5vw;
     }
 
+    .site-nav-main .site-nav-right {
+        padding: 9px 20px 10px 5px;
+    }
 }
 
 
