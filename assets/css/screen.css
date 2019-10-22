@@ -292,6 +292,12 @@ body {
 .site-nav-left {
     flex: 1 0 auto;
     display: flex;
+    position: relative;
+}
+
+.site-nav-left-content {
+    flex: 1 0 auto;
+    display: flex;
     align-items: center;
     overflow-x: auto;
     overflow-y: hidden;
@@ -307,7 +313,7 @@ body {
 }
 
 @media (max-width: 700px) {
-    .site-header-background:not(.responsive-header-img) .site-nav:after,
+    .site-header-background:not(.responsive-header-img) .site-nav-left:after,
     .site-nav-main .site-nav:after {
         content: "";
         position: absolute;
@@ -317,9 +323,9 @@ body {
         height: 100%;
     }
 
-    .site-header-background:not(.responsive-header-img) .site-nav:after,
-    .site-nav-main .site-nav:after {
-        right: 0;
+    .site-header-background:not(.responsive-header-img) .site-nav-left:after,
+    .site-nav-main .site-nav-left:after {
+        right: 10px;
         background: linear-gradient(to right, color(var(--darkgrey) l(-5%) a(0)) 0%,color(var(--darkgrey) l(-5%)) 100%);
     }
 
