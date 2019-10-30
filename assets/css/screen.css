@@ -3304,7 +3304,8 @@ form[data-members-form].error .message-error {
     }
 
     .site-main,
-    .post-template .site-main {
+    .post-template .site-main,
+    .page-template .site-main {
         background: var(--darkmode);
     }
 
