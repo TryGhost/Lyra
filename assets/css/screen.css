@@ -585,7 +585,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .post-card-primary-tag {
-    margin: 0 0 0.2em;
     color: var(--blue);
     font-size: 1.2rem;
     font-weight: 500;
@@ -2326,8 +2325,12 @@ Usage (In Ghost editor):
 }
 
 .author-social-link a {
-    color: var(--darkgrey);
+    color: #fff;
     font-weight: 600;
+}
+
+.no-image .author-social-link a {
+    color: var(--darkgrey);
 }
 
 .author-social-link a:hover {
@@ -2350,8 +2353,14 @@ Usage (In Ghost editor):
     content: "\2022";
     display: inline-block;
     margin: 0 12px;
-    color: var(--midgrey);
+    color: #fff;
     opacity: 0.6;
+}
+
+.no-image .author-location + .author-stats:before,
+.no-image .author-stats + .author-social-link:before,
+.no-image .author-social-link + .author-social-link:before {
+    color: var(--midgrey);
 }
 
 @media (max-width: 500px) {
@@ -3166,6 +3175,7 @@ form[data-members-form].error .message-error {
 .post-card-header-tags {
     display: flex;
     align-items: center;
+    margin: 0 0 0.2em;
 }
 
 .post-visibility {
@@ -3333,6 +3343,10 @@ form[data-members-form].error .message-error {
 
     .author-list-item .author-card:before {
         border-top-color: color(var(--darkmode) l(+4%));
+    }
+
+    .no-image .author-social-link a {
+        color: rgba(255, 255, 255, 0.75);
     }
 
     .post-full-content h1,
