@@ -119,7 +119,7 @@
                 $('body').addClass("subscribe-success");
             }
             if (action == 'signup') {
-                window.location = '/signup/?action=checkout';
+                window.location = '{{@site.url}}/signup/?action=checkout';
             }
             if (action == 'checkout') {
                 $('body').addClass("signup-success");
