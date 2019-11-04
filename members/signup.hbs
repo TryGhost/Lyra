@@ -9,7 +9,7 @@
     {{#if @member.paid}}
 
         {{!-- Logged in, paying member: Redirect home --}}
-        <script>window.location = '/';</script>
+        <script>window.location = '{{@site.url}}';</script>
 
     {{else if @member}}
 
