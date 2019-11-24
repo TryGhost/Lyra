@@ -3380,6 +3380,11 @@ form[data-members-form].error .message-error {
         border-top-color: color(var(--darkmode) l(+8%));
     }
 
+    .post-full-content hr:after {
+        background: color(var(--darkmode) l(+8%));
+        box-shadow: var(--darkmode) 0 0 0 5px;
+    }
+
     .post-full-content figcaption {
         color: rgba(255, 255, 255, 0.6);
     }
