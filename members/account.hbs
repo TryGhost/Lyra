@@ -9,10 +9,41 @@
     {{#if @member.paid}}
 
         {{!-- Logged in, paying member: Show account info --}}
-        <div class="account-box">
-            <h2 class="account-box-title">Nice, you're a subscriber!</h2>
-            <p>Hey! <strong>{{@member.email}}</strong> has an active {{@site.title}} account with access to all areas. You're all set, but if you need any help, get in touch with us and we'd be happy to help.</p>
-        </div>
+        <article class="post-content">
+            <div class="container">
+                <div class="content">
+                    <form class="authbox">
+                        <h1 class="authbox-title">Nice, you're a subscriber!</h1>
+                        <p>Hey! <strong>{{@member.email}}</strong> has an active {{@site.title}} account with access to all areas. You're all set, but if you need any help, get in touch on <code>support@rediverge.com</code> for assistance!</p>
+                        <div class="authbox-signup">
+                            {{#foreach @member.subscriptions}}
+
+                            <ul>
+                                <li><strong>Plan:</strong>$<span class="plan-price">0</span>/{{plan.interval}}</li>
+                                <li><strong>Card:</strong> **** **** **** {{default_payment_card_last4}}</li>
+                                <li><strong>Renews:</strong> {{date current_period_end format="DD MMM YYYY"}}</li>
+                                <li>
+                                    <button class="button small" data-members-cancel-subscription="{{id}}">
+                                        Unsubscribe!
+                                    </button>
+                                </li>
+                            </ul>
+
+                            {{#contentFor "scripts"}}
+                            <script>
+                                $(document).ready(function () {
+                                    var planAmount = {{plan.amount}} / 100;
+                                    $(".plan-price").html(planAmount);
+                                });
+                            </script>
+                            {{/contentFor}}
+
+                            {{/foreach}}
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </article>
 
     {{else if @member}}
 
