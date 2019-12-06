@@ -18,23 +18,39 @@
                         <div class="authbox-signup">
                             {{#foreach @member.subscriptions}}
 
-                            <p>
-                                You have a premium membership on {{@site.title}}. Your subscription will automatically
-                                renew on <strong>{{date current_period_end format="MMM DD YYYY"}}</strong> and you'll be charged
-                                <strong><span class="plan-price">0</span> USD</strong>.
-                            </p>
+                            {{#if cancel_at_period_end}}
+                                <p>
+                                    Your subscription will end on {{date current_period_end format="DD MMM YYYY"}}.
+                                    If you change your mind in the meantime you can turn on renew and
+                                    continue having access to all the content on {{@site.title}}.
+                                </p>
+                                <button class="button small" data-members-uncancel-subscription="{{id}}">
+                                    Turn on auto-renew
+                                    <p data-members-error><!-- error message will appear here --></p>
+                                </button>
 
-                            <ul>
-                                <li><strong>Email</strong> {{@member.email}}</li>
-                                <li><strong>Subscription</strong> {{plan.interval}}ly - <span class="plan-price">0</span> USD/{{plan.interval}}</li>
-                                <li><strong>Card </strong>**** **** **** {{default_payment_card_last4}}</li>
-                                <li><strong>Next renewal </strong>{{date current_period_end format="MMM DD YYYY"}}</li>
-                            </ul>
+                                <ul>
+                                    <li><strong>Email</strong> {{@member.email}}</li>
+                                </ul>
+                            {{else}}
+                                <p>
+                                    You have a premium membership on {{@site.title}}. Your subscription will automatically
+                                    renew on <strong>{{date current_period_end format="DD MMM YYYY"}}</strong> and you'll be charged
+                                    <strong><span class="plan-price">0</span> USD</strong>.
+                                </p>
 
-                            <button class="button small" data-members-cancel-subscription="{{id}}">
-                                Cancel subscription
-                                <p data-members-error><!-- error message will appear here --></p>
-                            </button>
+                                <ul>
+                                    <li><strong>Email</strong> {{@member.email}}</li>
+                                    <li><strong>Subscription</strong> {{plan.interval}}ly - <span class="plan-price">0</span> USD/{{plan.interval}}</li>
+                                    <li><strong>Card </strong>**** **** **** {{default_payment_card_last4}}</li>
+                                    <li><strong>Next renewal </strong>{{date current_period_end format="DD MMM YYYY"}}</li>
+                                </ul>
+
+                                <button class="button small" data-members-cancel-subscription="{{id}}">
+                                    Cancel subscription
+                                    <p data-members-error><!-- error message will appear here --></p>
+                                </button>
+                            {{/if}}
 
                             {{#contentFor "scripts"}}
                             <script>
