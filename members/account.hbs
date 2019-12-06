@@ -13,22 +13,28 @@
             <div class="container">
                 <div class="content">
                     <form class="authbox">
-                        <h1 class="authbox-title">Nice, you're a subscriber!</h1>
-                        <p>Hey! <strong>{{@member.email}}</strong> has an active {{@site.title}} account with access to all areas. You're all set, but if you need any help, get in touch on <code>support@rediverge.com</code> for assistance!</p>
+                        <h1 class="authbox-title">Account</h1>
+
                         <div class="authbox-signup">
                             {{#foreach @member.subscriptions}}
 
+                            <p>
+                                You have a premium membership on {{@site.title}}. Your subscription will automatically
+                                renew on <strong>{{date current_period_end format="MMM DD YYYY"}}</strong> and you'll be charged
+                                <strong><span class="plan-price">0</span> USD</strong>.
+                            </p>
+
                             <ul>
-                                <li><strong>Plan:</strong>$<span class="plan-price">0</span>/{{plan.interval}}</li>
-                                <li><strong>Card:</strong> **** **** **** {{default_payment_card_last4}}</li>
-                                <li><strong>Renews:</strong> {{date current_period_end format="DD MMM YYYY"}}</li>
-                                <li>
-                                    <button class="button small" data-members-cancel-subscription="{{id}}">
-                                        Unsubscribe!
-                                        <p data-members-error><!-- error message will appear here --></p>
-                                    </button>
-                                </li>
+                                <li><strong>Email</strong> {{@member.email}}</li>
+                                <li><strong>Subscription</strong> {{plan.interval}}ly - <span class="plan-price">0</span> USD/{{plan.interval}}</li>
+                                <li><strong>Card </strong>**** **** **** {{default_payment_card_last4}}</li>
+                                <li><strong>Next renewal </strong>{{date current_period_end format="MMM DD YYYY"}}</li>
                             </ul>
+
+                            <button class="button small" data-members-cancel-subscription="{{id}}">
+                                Cancel subscription
+                                <p data-members-error><!-- error message will appear here --></p>
+                            </button>
 
                             {{#contentFor "scripts"}}
                             <script>
