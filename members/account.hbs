@@ -24,10 +24,8 @@
                                     If you change your mind in the meantime you can turn on renew and
                                     continue having access to all the content on {{@site.title}}.
                                 </p>
-                                <button class="button small" data-members-uncancel-subscription="{{id}}">
-                                    Turn on auto-renew
-                                    <p data-members-error><!-- error message will appear here --></p>
-                                </button>
+
+                                {{cancel_link continueLabel="Turn on auto-renew"}}
 
                                 <ul>
                                     <li><strong>Email</strong> {{@member.email}}</li>
@@ -46,10 +44,7 @@
                                     <li><strong>Next renewal </strong>{{date current_period_end format="DD MMM YYYY"}}</li>
                                 </ul>
 
-                                <button class="button small" data-members-cancel-subscription="{{id}}">
-                                    Cancel subscription
-                                    <p data-members-error><!-- error message will appear here --></p>
-                                </button>
+                                {{cancel_link cancelLabel="Cancel subscription"}}
                             {{/if}}
 
                             {{#contentFor "scripts"}}
