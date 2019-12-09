@@ -12,16 +12,16 @@
         <div class="subscriber-box">
             <h1 class="subscriber-box-title">Your account</h1>
 
-            {{#if cancel_at_period_end}}
-                <p>
-                    Hey <strong>{{@member.email}}</strong>! Your subscription will end on {{date current_period_end format="DD MMM YYYY"}}. If you change your mind in the meantime you can turn on renew and continue having access to all the content on {{@site.title}}.
-                </p>
-                {{cancel_link continueLabel="Turn on auto-renew"}}
-            {{else}}
-                <p>Hey! You have an active {{@site.title}} account with access to all areas. Get in touch if have any problems or need some help getting things updated, and thanks for subscribing.</p>
-                <div class="subscriber-details">
-                    {{#foreach @member.subscriptions}}
-                
+            {{#foreach @member.subscriptions}}
+                <div class="subscription">
+                    {{#if cancel_at_period_end}}
+                        <p>
+                            <strong>Your subscription will expire on {{date current_period_end format="DD MMM YYYY"}}</strong>. If you change your mind in the meantime you can turn auto-renew back on to continue your subscription.
+                        </p>
+                    {{else}}
+                        <p>Hey! You have an active {{@site.title}} account with access to all areas. Get in touch if have any problems or need some help getting things updated, and thanks for subscribing.</p>
+                    {{/if}}
+                    <div class="subscriber-details">
                         <div class="subscriber-detail">
                             <label class="subscriber-detail-label">Email address</label>
                             <span class="subscriber-detail-content">{{@member.email}}</span>
@@ -38,12 +38,14 @@
                         </div>
                     
                         <div class="subscriber-detail">
-                            <label class="subscriber-detail-label">Next bill date</label>
+                            <label class="subscriber-detail-label">
+                                {{#if cancel_at_period_end}}
+                                    Expires
+                                {{else}}
+                                    Next bill date
+                                {{/if}}
+                            </label>
                             <span class="subscriber-detail-content">{{date current_period_end format="DD MMM YYYY"}}</span>
-                        </div>
-                    
-                        <div class="ubsubscribe-button-container">
-                            {{cancel_link cancelLabel="Cancel subscription"}}
                         </div>
                     
                         {{#contentFor "scripts"}}
@@ -54,10 +56,12 @@
                             });
                         </script>
                         {{/contentFor}}
-                
-                    {{/foreach}}
+                    </div>
+                    <div class="unsubscribe-link-container">
+                        {{cancel_link}}
+                    </div>
                 </div>
-            {{/if}}
+            {{/foreach}}
         </div>
 
     {{else if @member}}

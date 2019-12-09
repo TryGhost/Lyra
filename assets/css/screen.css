@@ -3166,9 +3166,12 @@ form[data-members-form].error .message-error {
 }
 
 .subscriber-box-title {
-    padding: 0 0 20px;
     font-size: 3.4rem;
-    border-bottom: 1px solid color(var(--lightgrey) l(+10%));
+}
+
+.subscription {
+    padding: 20px 0 40px;
+    border-top: 1px solid color(var(--lightgrey) l(+10%));
 }
 
 .subscriber-box p {
@@ -3195,10 +3198,20 @@ form[data-members-form].error .message-error {
     text-transform: uppercase;
 }
 
-.ubsubscribe-button-container {
+.unsubscribe-link-container {
     flex: 1 0 100%;
-    padding: 30px 0 0;
-    border-top: 1px solid color(var(--lightgrey) l(+10%));
+}
+
+.unsubscribe-link-container .button {
+    height: 44px;
+    line-height: 44px;
+    padding: 0 1.8rem;
+    font-size: 1.5rem;
+}
+
+.unsubscribe-link-container .button[data-members-uncancel-subscription] {
+    background: var(--blue);
+    color: #fff;
 }
 
 .account-box {
@@ -3284,7 +3297,7 @@ form[data-members-form].error .message-error {
 }
 
 
-/* 14. Dark Mode
+/* 13. Dark Mode
 /* ---------------------------------------------------------- */
 @media (prefers-color-scheme: dark) {
     body {
