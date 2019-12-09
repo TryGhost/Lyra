@@ -9,59 +9,56 @@
     {{#if @member.paid}}
 
         {{!-- Logged in, paying member: Show account info --}}
-        <article class="post-content">
-            <div class="container">
-                <div class="content">
-                    <form class="authbox">
-                        <h1 class="authbox-title">Account</h1>
+        <div class="subscriber-box">
+            <h1 class="subscriber-box-title">Your account</h1>
 
-                        <div class="authbox-signup">
-                            {{#foreach @member.subscriptions}}
-
-                            {{#if cancel_at_period_end}}
-                                <p>
-                                    Your subscription will end on {{date current_period_end format="DD MMM YYYY"}}.
-                                    If you change your mind in the meantime you can turn on renew and
-                                    continue having access to all the content on {{@site.title}}.
-                                </p>
-
-                                {{cancel_link continueLabel="Turn on auto-renew"}}
-
-                                <ul>
-                                    <li><strong>Email</strong> {{@member.email}}</li>
-                                </ul>
-                            {{else}}
-                                <p>
-                                    You have a premium membership on {{@site.title}}. Your subscription will automatically
-                                    renew on <strong>{{date current_period_end format="DD MMM YYYY"}}</strong> and you'll be charged
-                                    <strong><span class="plan-price">0</span> USD</strong>.
-                                </p>
-
-                                <ul>
-                                    <li><strong>Email</strong> {{@member.email}}</li>
-                                    <li><strong>Subscription</strong> {{plan.interval}}ly - <span class="plan-price">0</span> USD/{{plan.interval}}</li>
-                                    <li><strong>Card </strong>**** **** **** {{default_payment_card_last4}}</li>
-                                    <li><strong>Next renewal </strong>{{date current_period_end format="DD MMM YYYY"}}</li>
-                                </ul>
-
-                                {{cancel_link cancelLabel="Cancel subscription"}}
-                            {{/if}}
-
-                            {{#contentFor "scripts"}}
-                            <script>
-                                $(document).ready(function () {
-                                    var planAmount = {{plan.amount}} / 100;
-                                    $(".plan-price").html(planAmount);
-                                });
-                            </script>
-                            {{/contentFor}}
-
-                            {{/foreach}}
+            {{#if cancel_at_period_end}}
+                <p>
+                    Hey <strong>{{@member.email}}</strong>! Your subscription will end on {{date current_period_end format="DD MMM YYYY"}}. If you change your mind in the meantime you can turn on renew and continue having access to all the content on {{@site.title}}.
+                </p>
+                {{cancel_link continueLabel="Turn on auto-renew"}}
+            {{else}}
+                <p>Hey! You have an active {{@site.title}} account with access to all areas. Get in touch if have any problems or need some help getting things updated, and thanks for subscribing.</p>
+                <div class="subscriber-details">
+                    {{#foreach @member.subscriptions}}
+                
+                        <div class="subscriber-detail">
+                            <label class="subscriber-detail-label">Email address</label>
+                            <span class="subscriber-detail-content">{{@member.email}}</span>
                         </div>
-                    </form>
+                    
+                        <div class="subscriber-detail">
+                            <label class="subscriber-detail-label">Your plan</label>
+                            <span class="subscriber-detail-content">$<span class="plan-price">0</span>/{{plan.interval}}</span>
+                        </div>
+                    
+                        <div class="subscriber-detail">
+                            <label class="subscriber-detail-label">Card</label>
+                            <span class="subscriber-detail-content">**** **** **** {{default_payment_card_last4}}</span>
+                        </div>
+                    
+                        <div class="subscriber-detail">
+                            <label class="subscriber-detail-label">Next bill date</label>
+                            <span class="subscriber-detail-content">{{date current_period_end format="DD MMM YYYY"}}</span>
+                        </div>
+                    
+                        <div class="ubsubscribe-button-container">
+                            {{cancel_link cancelLabel="Cancel subscription"}}
+                        </div>
+                    
+                        {{#contentFor "scripts"}}
+                        <script>
+                            $(document).ready(function () {
+                                var planAmount = {{ plan.amount }} / 100;
+                                $(".plan-price").html(planAmount);
+                            });
+                        </script>
+                        {{/contentFor}}
+                
+                    {{/foreach}}
                 </div>
-            </div>
-        </article>
+            {{/if}}
+        </div>
 
     {{else if @member}}
 
