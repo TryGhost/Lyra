@@ -3328,6 +3328,12 @@ form[data-members-form].error .message-error {
     box-shadow: none !important;
 }
 
+@media (max-width: 600px) {
+    .subscriber-details {
+        flex-direction: column;
+    }
+}
+
 
 /* 13. Dark Mode
 /* ---------------------------------------------------------- */
