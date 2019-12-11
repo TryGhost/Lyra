@@ -16,10 +16,12 @@
                 <div class="subscription">
                     {{#if cancel_at_period_end}}
                         <p>
-                            <strong>Your subscription will expire on {{date current_period_end format="DD MMM YYYY"}}</strong>. If you change your mind in the meantime you can turn auto-renew back on to continue your subscription.
+                            <strong class="subscription-expiration-warning">Your subscription will expire on {{date current_period_end format="DD MMM YYYY"}}.</strong> If you change your mind in the mean time you can turn auto-renew back on to continue your subscription.
                         </p>
                     {{else}}
-                        <p>Hey! You have an active {{@site.title}} account with access to all areas. Get in touch if have any problems or need some help getting things updated, and thanks for subscribing.</p>
+                        <p>
+                            Hey! You have an active {{@site.title}} account with access to all areas. Get in touch if have any problems or need some help getting things updated, and thanks for subscribing.
+                        </p>
                     {{/if}}
                     <div class="subscriber-details">
                         <div class="subscriber-detail">
@@ -57,9 +59,8 @@
                         </script>
                         {{/contentFor}}
                     </div>
-                    <div class="unsubscribe-link-container">
-                        {{cancel_link}}
-                    </div>
+
+                    {{cancel_link}}
                 </div>
             {{/foreach}}
         </div>

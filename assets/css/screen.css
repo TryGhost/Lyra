@@ -3169,13 +3169,17 @@ form[data-members-form].error .message-error {
     font-size: 3.4rem;
 }
 
+.subscriber-box p {
+    line-height: 1.5em;
+}
+
 .subscription {
     padding: 20px 0 40px;
     border-top: 1px solid color(var(--lightgrey) l(+10%));
 }
 
-.subscriber-box p {
-    line-height: 1.5em;
+.subscription-expiration-warning {
+    color: var(--red);
 }
 
 .subscriber-details {
@@ -3198,20 +3202,48 @@ form[data-members-form].error .message-error {
     text-transform: uppercase;
 }
 
-.unsubscribe-link-container {
-    flex: 1 0 100%;
-}
-
-.unsubscribe-link-container .button {
+.gh-subscription-cancel {
+    display: inline-block;
     height: 44px;
-    line-height: 44px;
     padding: 0 1.8rem;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
     font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 42px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    color: var(--blue);
+    background-color: transparent;
+    box-shadow: inset 0 0 0 1px var(--blue);
+    appearance: none;
+    transition: 0.4s ease;
 }
 
-.unsubscribe-link-container .button[data-members-uncancel-subscription] {
-    background: var(--blue);
+.gh-subscription-cancel:hover {
+    text-decoration: none;
+    color: color(var(--blue) l(-15%));
+    box-shadow: inset 0 0 0 1px color(var(--blue) l(-10%));
+    transition: 0.2s ease;
+}
+
+.gh-subscription-cancel[data-members-continue-subscription] {
     color: #fff;
+    background-color: var(--blue);
+    box-shadow: none;
+}
+
+.gh-subscription-cancel[data-members-continue-subscription]:hover {
+    background-color: color(var(--blue) l(-10%));
+}
+
+.gh-error-subscription-cancel {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: var(--red);
 }
 
 .account-box {
