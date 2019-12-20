@@ -2496,6 +2496,11 @@ Usage (In Ghost editor):
     visibility: hidden;
 }
 
+.notification.error {
+    background: color(var(--red) l(-5%));
+    box-shadow: var(--red) 0 0 0 1px;
+}
+
 .subscribe-success .notification-subscribe {
     visibility: visible;
     transform: translateY(0);
