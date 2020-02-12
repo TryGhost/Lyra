@@ -65,13 +65,12 @@
                         </div>
                     </div>
 
-                    {{cancel_link}}
+                    <ul class="subscription-actions">
+                        <li><a href="javascript:" data-members-edit-billing>Edit billing info</a></li>
+                        <li>{{cancel_link}}</li>
+                    </ul>
                 </div>
             {{/foreach}}
-
-            <a data-members-edit-billing href="javascript:">
-                Edit Billing
-            </a>
         </div>
 
     {{else if @member}}

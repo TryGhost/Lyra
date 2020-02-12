@@ -3340,7 +3340,19 @@ form[data-members-form].error .message-error {
     text-transform: uppercase;
 }
 
-.gh-subscription-cancel {
+.subscription-actions {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.subscription-actions li {
+    margin: 0 0.8rem 0 0;
+    padding: 0;
+}
+
+.subscription-actions li a {
     display: inline-block;
     padding: 0 1.8rem;
     height: 44px;
@@ -3361,11 +3373,22 @@ form[data-members-form].error .message-error {
     appearance: none;
 }
 
-.gh-subscription-cancel:hover {
+.subscription-actions li a:hover {
+    text-decoration: none;
     color: color(var(--blue) l(-15%));
     text-decoration: none;
     box-shadow: inset 0 0 0 1px color(var(--blue) l(-10%));
     transition: 0.2s ease;
+}
+
+.subscription-actions .gh-subscription-cancel {
+    box-shadow: inset 0 0 0 1px color(var(--midgrey) l(+10%));
+    color: color(var(--midgrey) l(+10%));
+}
+
+.subscription-actions .gh-subscription-cancel:hover {
+    box-shadow: inset 0 0 0 1px var(--midgrey);
+    color: var(--midgrey);
 }
 
 .gh-subscription-cancel[data-members-continue-subscription] {
@@ -3376,6 +3399,8 @@ form[data-members-form].error .message-error {
 
 .gh-subscription-cancel[data-members-continue-subscription]:hover {
     background-color: color(var(--blue) l(-10%));
+    color: #fff;
+    box-shadow: none;
 }
 
 .gh-error-subscription-cancel {
