@@ -3294,8 +3294,7 @@ form[data-members-form].error .message-error {
 }
 
 .subscription .subscriber-avatar {
-    position: relative;
-    margin: 0 0 0 20px;
+    margin: 4px 0 0 20px;
 }
 
 .subscriber-avatar img {
