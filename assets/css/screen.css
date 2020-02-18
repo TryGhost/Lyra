@@ -488,6 +488,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .account-menu-avatar {
     position: relative;
     display: block;
+    margin: 0;
+    padding: 1px;
     width: 32px;
     height: 32px;
     background: color(var(--lightgrey) l(+10%));
