@@ -3173,6 +3173,7 @@ form[data-members-form].error .message-error {
 
 .subscription-title h1 {
     font-size: 3.4rem;
+    margin-bottom: 12px;
 }
 
 .subscriber-avatar {
@@ -3180,6 +3181,7 @@ form[data-members-form].error .message-error {
     width: 120px;
     height: 120px;
     background: color(var(--lightgrey) l(+10%));
+    border: 1px solid color(var(--lightgrey) l(+10%));
     border-radius: 100%;
     object-fit: cover;
 }
