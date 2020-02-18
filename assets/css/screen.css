@@ -556,7 +556,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     padding: 0;
 }
 
-.account-menu .account-logged-in {
+.account-menu .account-info {
     display: flex;
     flex-direction: column;
     padding: 4px 20px 12px;
@@ -565,7 +565,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     border-bottom: 1px solid var(--whitegrey);
 }
 
-.account-logged-in .account-email {
+.account-info .account-email {
     display: inline-block;
     max-width: 200px;
     text-overflow: ellipsis;
@@ -3737,7 +3737,7 @@ form[data-members-form].error .message-error {
         border-color: transparent transparent color(var(--darkmode) l(+4%));
     }
 
-    .account-menu .account-logged-in {
+    .account-menu .account-info {
         border-color: color(var(--darkmode) l(+10%));
     }
 
