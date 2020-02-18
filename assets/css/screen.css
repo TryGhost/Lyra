@@ -522,7 +522,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
         0 7.5px 9.9px rgba(0, 0, 0, 0.035),
         0 18.1px 23.8px rgba(0, 0, 0, 0.046),
         0 60px 79px rgba(0, 0, 0, 0.07);
-    border-radius: 5px;
+    border-radius: 3px;
     opacity: 0;
     transition: 
         all .3s cubic-bezier(.4,.01,.165,.99),
@@ -3519,7 +3519,7 @@ form[data-members-form].error .message-error {
     }
 
     .author-profile-image {
-        background: var(--darkmode);
+        background: color(var(--darkmode) l(+5%));
     }
 
     .post-card-byline-content a {
@@ -3715,6 +3715,45 @@ form[data-members-form].error .message-error {
 
     .subscribe-form .success .message-success {
         color: color(var(--green) l(+5%) s(-5%));
+    }
+    
+    .account-menu-avatar {
+        background: color(var(--darkmode) l(+5%));
+    }
+
+    .account-menu-avatar img {
+        opacity: 1.0;
+    }
+
+    .account-menu ul {
+        background: color(var(--darkmode) l(+4%));
+        box-shadow: 0 12px 26px rgba(0,0,0,0.4);
+    }
+
+    .account-menu ul::before {
+        border-color: transparent transparent color(var(--darkmode) l(+4%));
+    }
+
+    .account-menu .account-logged-in {
+        border-color: color(var(--darkmode) l(+10%));
+    }
+
+    .account-menu .account-email,
+    .account-menu ul a {
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .subscriber-avatar {
+        background: color(var(--darkmode) l(+5%));
+        border-color: color(var(--darkmode) l(+5%));
+    }
+
+    .subscriber-avatar img {
+        opacity: 1.0;
+    }
+
+    .subscriber-details {
+        border-color: color(var(--darkmode) l(+5%));
     }
 
     input[type="text"],
