@@ -3283,6 +3283,7 @@ form[data-members-form].error .message-error {
 }
 
 .subscriber-avatar {
+    position: relative;
     flex: 1 0 120px;
     width: 120px;
     height: 120px;
@@ -3398,6 +3399,7 @@ form[data-members-form].error .message-error {
 .account-box-title {
     font-size: 3.4rem;
     margin-top: 20px;
+    text-align: center;
 }
 
 .account-box p {
