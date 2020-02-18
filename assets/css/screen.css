@@ -3165,8 +3165,37 @@ form[data-members-form].error .message-error {
     margin: 0 auto;
 }
 
-.subscriber-box-title {
+.subscriber-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.subscription-title h1 {
     font-size: 3.4rem;
+}
+
+.subscriber-avatar {
+    flex: 1 0 120px;
+    width: 120px;
+    height: 120px;
+    background: color(var(--lightgrey) l(+10%));
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.subscription .subscriber-avatar {
+    position: relative;
+    margin: 0 0 0 20px;
+}
+
+.subscriber-avatar img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 100%;
 }
 
 .subscriber-box p {
@@ -3175,7 +3204,6 @@ form[data-members-form].error .message-error {
 
 .subscription {
     padding: 20px 0 40px;
-    border-top: 1px solid color(var(--lightgrey) l(+10%));
 }
 
 .subscription-expiration-warning {
@@ -3186,6 +3214,10 @@ form[data-members-form].error .message-error {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
+    padding: 20px 0 0;
+    margin-bottom: 30px;
+    border-top: 1px solid color(var(--lightgrey) l(+10%));
+    border-bottom: 1px solid color(var(--lightgrey) l(+10%));
 }
 
 .subscriber-detail {
@@ -3193,7 +3225,7 @@ form[data-members-form].error .message-error {
     display: flex;
     flex-direction: column;
     padding: 0 20px 0 0;
-    margin: 0 0 30px;
+    margin: 0 0 20px;
 }
 
 .subscriber-detail-label {
@@ -3247,6 +3279,9 @@ form[data-members-form].error .message-error {
 }
 
 .account-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     max-width: 560px;
     margin: 0 auto;
@@ -3254,6 +3289,11 @@ form[data-members-form].error .message-error {
 
 .account-box-title {
     font-size: 3.4rem;
+    margin-top: 20px;
+}
+
+.account-box p {
+    text-align: center;
 }
 
 .header-cta {
