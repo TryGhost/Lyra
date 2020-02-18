@@ -530,6 +530,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     transform: translateY(-6px) scale(0.95);
     transform-origin: top right;
     pointer-events: none;
+    z-index: 9998;
 }
 
 .account-menu-avatar + ul:active,
@@ -3476,6 +3477,10 @@ form[data-members-form].error .message-error {
 @media (max-width: 600px) {
     .subscriber-details {
         flex-direction: column;
+    }
+
+    .subscriber-avatar {
+        display: none;
     }
 }
 
