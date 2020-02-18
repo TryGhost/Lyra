@@ -571,6 +571,10 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .account-logged-in .account-email {
+    display: inline-block;
+    max-width: 200px;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
     margin-top: -4px;
     color: var(--darkgrey);
     font-weight: 600;
