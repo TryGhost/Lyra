@@ -284,7 +284,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    overflow-y: hidden;
     height: 64px;
     font-size: 1.3rem;
 }
@@ -293,6 +292,7 @@ body {
     position: relative;
     flex: 1 0 auto;
     display: flex;
+    height: 100%;
 }
 
 .site-nav-left-content {
@@ -303,7 +303,7 @@ body {
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     margin-right: 10px;
-    padding: 10px 0 80px;
+    padding: 10px 0 9px;
     font-weight: 500;
     letter-spacing: 0.2px;
     text-transform: uppercase;
@@ -481,6 +481,110 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     opacity: 1;
 }
 
+.account-menu {
+    position: relative;
+}
+
+.account-menu-avatar {
+    position: relative;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: color(var(--lightgrey) l(+10%));
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.account-menu-avatar img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 100%;
+}
+
+.account-menu-avatar:focus {
+    outline: none;
+}
+
+.account-menu ul {
+    visibility: hidden;
+    position: absolute;
+    right: -8px;
+    top: 43px;
+    background: #fff;
+    min-width: 240px;
+    list-style: none;
+    padding: 8px 0;
+    box-shadow:
+        0 2.7px 3.6px rgba(0, 0, 0, 0.024),
+        0 7.5px 9.9px rgba(0, 0, 0, 0.035),
+        0 18.1px 23.8px rgba(0, 0, 0, 0.046),
+        0 60px 79px rgba(0, 0, 0, 0.07);
+    border-radius: 5px;
+    opacity: 0;
+    transition: 
+        all .3s cubic-bezier(.4,.01,.165,.99),
+        opacity .2s cubic-bezier(.4,.01,.165,.99);
+    transform: translateY(-6px) scale(0.95);
+    transform-origin: top right;
+    pointer-events: none;
+}
+
+.account-menu-avatar + ul:active,
+.account-menu-avatar:focus + ul {
+    visibility: visible;
+    opacity: 1.0;
+    transform: translateY(0) scale(1);
+    pointer-events: all;
+}
+
+.account-menu ul:before {
+    content: "";
+    position: absolute;
+    right: 14px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-color: transparent transparent #fff;
+    border-style: solid;
+    border-width: 0 10px 10px;
+    z-index: 9998;
+}
+
+.account-menu ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.account-menu .account-logged-in {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 20px 12px;
+    margin: 0 0 6px;
+    color: var(--midgrey);
+    border-bottom: 1px solid var(--whitegrey);
+}
+
+.account-logged-in .account-email {
+    margin-top: -4px;
+    color: var(--darkgrey);
+    font-weight: 600;
+}
+
+.account-menu ul a {
+    display: block;
+    padding: 6px 20px;
+    color: color(var(--darkgrey) l(+15%));
+}
+
+.account-menu ul a:hover {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+
 /* Special behaviors for home navigation */
 
 .home-template .site-nav-main {
@@ -631,7 +735,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     height: 100%;
     background: color(var(--lightgrey) l(+10%));
     border-radius: 100%;
-
     object-fit: cover;
 }
 
