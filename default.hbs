@@ -121,6 +121,20 @@
                 $('.subscribe-overlay form').removeClass();
                 $('.subscribe-email').val('');
             });
+
+            // Account navigation menu
+            $('.account-menu-avatar').click(function(event) {
+                $(this).toggleClass('active');
+                event.stopPropagation();
+            });
+
+            $('.account-menu-dropdown').click(function(event) {
+                event.stopPropagation();
+            });
+
+            $('body').click(function () {
+                $('.account-menu-avatar').removeClass('active');
+            });
         });
     </script>
 

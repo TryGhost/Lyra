@@ -506,10 +506,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     border-radius: 100%;
 }
 
-.account-menu-avatar:focus {
-    outline: none;
-}
-
 .account-menu ul {
     visibility: hidden;
     position: absolute;
@@ -535,8 +531,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     z-index: 9998;
 }
 
-.account-menu-avatar + ul:active,
-.account-menu-avatar:focus + ul {
+.account-menu-avatar.active + ul {
     visibility: visible;
     opacity: 1.0;
     transform: translateY(0) scale(1);
