@@ -116,6 +116,7 @@ body {
 
 .site-header-background {
     position: relative;
+    margin-top: 64px;
     padding-bottom: 12px;
     color: #fff;
     background: color(var(--darkgrey) l(-5%)) no-repeat center center;
@@ -3048,8 +3049,9 @@ textarea:focus {
 
 .checkout-title {
     margin: 0 auto 10px;
+    padding: 5vw 0 0;
     font-size: 4rem;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: -0.6px;
 }
 
