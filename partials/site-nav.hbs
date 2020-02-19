@@ -21,7 +21,9 @@
             <div class="account-menu">
                 <a href="javascript:" class="account-menu-avatar" id="account-menu" type="checkbox" name="menu">
                     {{> "icons/avatar"}}
-                    <img src="{{@member.avatar_image}}" />
+                    {{#if @member.avatar_image}}
+                        <img src="{{@member.avatar_image}}" />
+                    {{/if}}
                 </a>
                 <ul class="account-menu-dropdown">
                     <li class="account-info">

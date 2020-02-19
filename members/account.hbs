@@ -31,7 +31,9 @@
                         {{#if @first}}
                             <div class="subscriber-avatar">
                                 {{> "icons/avatar"}}
-                                <img src="{{@member.avatar_image}}" />
+                                {{#if @member.avatar_image}}
+                                    <img src="{{@member.avatar_image}}" />
+                                {{/if}}
                             </div>
                         {{/if}}
                     </div>
@@ -74,7 +76,9 @@
         <div class="account-box">
             <div class="subscriber-avatar">
                 {{> "icons/avatar"}}
-                <img src="{{@member.avatar_image}}" />
+                {{#if @member.avatar_image}}
+                    <img src="{{@member.avatar_image}}" />
+                {{/if}}
             </div>
             <h1 class="account-box-title">Currently, you're not a subscriber</h1>
             <p>Hey there! <strong>{{@member.email}}</strong> is subscribed to free updates from {{@site.title}}, but doesn't have a paid subscription to unlock full access.</p>
