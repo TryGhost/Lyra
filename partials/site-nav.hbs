@@ -18,8 +18,22 @@
     </div>
     <div class="site-nav-right">
         {{#if @member}}
-            <a class="account-link" href="/account/">Account</a>
-            <a class="button small header-cta signout-link" href="#signout" data-members-signout>Log out</a>
+            <div class="account-menu">
+                <a href="javascript:" class="account-menu-avatar" id="account-menu" type="checkbox" name="menu">
+                    {{> "icons/avatar"}}
+                    {{#if @member.avatar_image}}
+                        <img src="{{@member.avatar_image}}" />
+                    {{/if}}
+                </a>
+                <ul class="account-menu-dropdown">
+                    <li class="account-info">
+                        <small>Signed in as</small>
+                        <span class="account-email" title="{{@member.email}}">{{@member.email}}</span>
+                    </li>
+                    <li><a href="/account/">Account</a></li>
+                    <li><a href="#signout" data-members-signout>Log out</a></li>
+                </ul>
+            </div>
         {{else}}
             <a class="signin-link" href="/signin/">Log in</a>
             <a class="button primary small header-cta" href="/signup/">Subscribe</a>

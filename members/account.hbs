@@ -10,19 +10,33 @@
 
         {{!-- Logged in, paying member: Show account info --}}
         <div class="subscriber-box">
-            <h1 class="subscriber-box-title">Your account</h1>
 
             {{#foreach @member.subscriptions}}
                 <div class="subscription">
-                    {{#if cancel_at_period_end}}
-                        <p>
-                            <strong class="subscription-expiration-warning">Your subscription will expire on {{date current_period_end format="DD MMM YYYY"}}.</strong> If you change your mind in the meantime you can turn auto-renew back on to continue your subscription.
-                        </p>
-                    {{else}}
-                        <p>
-                            Hey! You have an active {{@site.title}} account with access to all areas. Get in touch if have any problems or need some help getting things updated, and thanks for subscribing.
-                        </p>
-                    {{/if}}
+                    <div class="subscriber-header">
+                        <div class="subscription-title">
+                            {{#if @first}}
+                                <h1>Your account</h1>
+                            {{/if}}
+                            {{#if cancel_at_period_end}}
+                                <p>
+                                    <strong class="subscription-expiration-warning">Your subscription will expire on {{date current_period_end format="DD MMM YYYY"}}.</strong> If you change your mind in the meantime you can turn auto-renew back on to continue your subscription.
+                                </p>
+                            {{else}}
+                                <p>
+                                    Hey! You have an active <strong>{{@site.title}}</strong> account with access to all areas. Get in touch if have any problems or need some help getting things updated, and thanks for subscribing.
+                                </p>
+                            {{/if}}
+                        </div>
+                        {{#if @first}}
+                            <div class="subscriber-avatar">
+                                {{> "icons/avatar"}}
+                                {{#if @member.avatar_image}}
+                                    <img src="{{@member.avatar_image}}" />
+                                {{/if}}
+                            </div>
+                        {{/if}}
+                    </div>
                     <div class="subscriber-details">
                         <div class="subscriber-detail">
                             <label class="subscriber-detail-label">Email address</label>
@@ -60,6 +74,12 @@
 
         {{!-- Logged in, not paying: Link to checkout --}}
         <div class="account-box">
+            <div class="subscriber-avatar">
+                {{> "icons/avatar"}}
+                {{#if @member.avatar_image}}
+                    <img src="{{@member.avatar_image}}" />
+                {{/if}}
+            </div>
             <h1 class="account-box-title">Currently, you're not a subscriber</h1>
             <p>Hey there! <strong>{{@member.email}}</strong> is subscribed to free updates from {{@site.title}}, but doesn't have a paid subscription to unlock full access.</p>
             <div class="authbox-signup">
