@@ -516,14 +516,10 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     min-width: 240px;
     background: #fff;
     border-radius: 3px;
-    box-shadow: 0 2.7px 3.6px rgba(0, 0, 0, 0.024),
-    0 7.5px 9.9px rgba(0, 0, 0, 0.035),
-    0 18.1px 23.8px rgba(0, 0, 0, 0.046),
-    0 60px 79px rgba(0, 0, 0, 0.07);
+    box-shadow: rgba(39,44,49,0.08) 0 12px 26px, rgba(39, 44, 49, 0.06) 1px 3px 8px;
     list-style: none;
     opacity: 0;
-    transition: all 0.3s cubic-bezier(0.4,0.01,0.165,0.99),
-    opacity 0.2s cubic-bezier(0.4,0.01,0.165,0.99);
+    transition: all 0.3s cubic-bezier(0.4,0.01,0.165,0.99), opacity 0.2s cubic-bezier(0.4,0.01,0.165,0.99);
     transform: translateY(-6px) scale(0.95);
     transform-origin: top right;
     pointer-events: none;
@@ -568,7 +564,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     overflow-x: hidden;
     margin-top: -4px;
     max-width: 200px;
-    color: var(--darkgrey);
+    color: color(var(--midgrey) l(-30%));
     font-weight: 600;
     text-overflow: ellipsis;
 }
@@ -576,7 +572,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .account-menu ul a {
     display: block;
     padding: 6px 20px;
-    color: color(var(--darkgrey) l(+15%));
+    color: color(var(--midgrey) l(-30%));
 }
 
 .account-menu ul a:hover {
