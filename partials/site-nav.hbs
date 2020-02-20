@@ -30,13 +30,13 @@
                         <small>Signed in as</small>
                         <span class="account-email" title="{{@member.email}}">{{@member.email}}</span>
                     </li>
-                    <li><a href="/account/">Account</a></li>
+                    <li><a href="{{@site.url}}/account/">Account</a></li>
                     <li><a href="#signout" data-members-signout>Log out</a></li>
                 </ul>
             </div>
         {{else}}
-            <a class="signin-link" href="/signin/">Log in</a>
-            <a class="button primary small header-cta" href="/signup/">Subscribe</a>
+            <a class="signin-link" href="{{@site.url}}/signin/">Log in</a>
+            <a class="button primary small header-cta" href="{{@site.url}}/signup/">Subscribe</a>
         {{/if}}
     </div>
 </nav>
