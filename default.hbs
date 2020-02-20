@@ -107,15 +107,9 @@
                 $('body').addClass("checkout-success");
             }
             if (stripe == 'billing-update-success') {
-                window.location = '{{@site.url}}/account/?stripe=billing-update-success-account';
-            }
-            if (stripe == 'billing-update-cancel') {
-                window.location = '{{@site.url}}/account/?stripe=billing-update-cancel-account';
-            }
-            if (stripe == 'billing-update-success-account') {
                 $('body').addClass("billing-success");
             }
-            if (stripe == 'billing-update-cancel-account') {
+            if (stripe == 'billing-update-cancel') {
                 $('body').addClass("billing-cancel");
             }
 

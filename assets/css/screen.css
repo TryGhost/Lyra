@@ -2619,6 +2619,7 @@ Usage (In Ghost editor):
 }
 
 .billing-cancel .notification-billing-update-cancel {
+    background: color(var(--red) l(-5%));
     visibility: visible;
     transform: translateY(0);
 }
