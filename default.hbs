@@ -106,6 +106,18 @@
             if (stripe == 'success') {
                 $('body').addClass("checkout-success");
             }
+            if (stripe == 'billing-update-success') {
+                window.location = '{{@site.url}}/account/?stripe=billing-update-success-account';
+            }
+            if (stripe == 'billing-update-cancel') {
+                window.location = '{{@site.url}}/account/?stripe=billing-update-cancel-account';
+            }
+            if (stripe == 'billing-update-success-account') {
+                $('body').addClass("billing-success");
+            }
+            if (stripe == 'billing-update-cancel-account') {
+                $('body').addClass("billing-cancel");
+            }
 
             $('.notification-close').click(function () {
                 $(this).parent().addClass('closed');

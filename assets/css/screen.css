@@ -2613,6 +2613,15 @@ Usage (In Ghost editor):
     visibility: visible;
     transform: translateY(0);
 }
+.billing-success .notification-billing-update {
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.billing-cancel .notification-billing-update-cancel {
+    visibility: visible;
+    transform: translateY(0);
+}
 
 .notification.closed {
     visibility: hidden;
