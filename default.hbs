@@ -106,6 +106,12 @@
             if (stripe == 'success') {
                 $('body').addClass("checkout-success");
             }
+            if (stripe == 'billing-update-success') {
+                $('body').addClass("billing-success");
+            }
+            if (stripe == 'billing-update-cancel') {
+                $('body').addClass("billing-cancel");
+            }
 
             $('.notification-close').click(function () {
                 $(this).parent().addClass('closed');

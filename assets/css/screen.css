@@ -2586,7 +2586,7 @@ Usage (In Ghost editor):
     right: 0;
     left: 0;
     z-index: 9000;
-    padding: 20px 60px;
+    padding: 22px 60px;
     color: #fff;
     font-size: 1.6rem;
     line-height: 1.3em;
@@ -2610,6 +2610,16 @@ Usage (In Ghost editor):
     transform: translateY(0);
 }
 .checkout-success .notification-checkout {
+    visibility: visible;
+    transform: translateY(0);
+}
+.billing-success .notification-billing-update {
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.billing-cancel .notification-billing-update-cancel {
+    background: color(var(--red) l(-5%));
     visibility: visible;
     transform: translateY(0);
 }
@@ -3340,7 +3350,24 @@ form[data-members-form].error .message-error {
     text-transform: uppercase;
 }
 
-.gh-subscription-cancel {
+.subscription-actions {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.subscription-actions li {
+    margin: 0 0.8rem 0 0;
+    padding: 0;
+}
+
+.subscription-actions li:last-of-type {
+    margin-right: 0;
+}
+
+.subscription-actions li a {
     display: inline-block;
     padding: 0 1.8rem;
     height: 44px;
@@ -3361,11 +3388,22 @@ form[data-members-form].error .message-error {
     appearance: none;
 }
 
-.gh-subscription-cancel:hover {
+.subscription-actions li a:hover {
+    text-decoration: none;
     color: color(var(--blue) l(-15%));
     text-decoration: none;
     box-shadow: inset 0 0 0 1px color(var(--blue) l(-10%));
     transition: 0.2s ease;
+}
+
+.subscription-actions .gh-subscription-cancel {
+    box-shadow: inset 0 0 0 1px color(var(--midgrey) l(+10%));
+    color: color(var(--midgrey) l(+10%));
+}
+
+.subscription-actions .gh-subscription-cancel:hover {
+    box-shadow: inset 0 0 0 1px var(--midgrey);
+    color: var(--midgrey);
 }
 
 .gh-subscription-cancel[data-members-continue-subscription] {
@@ -3376,6 +3414,8 @@ form[data-members-form].error .message-error {
 
 .gh-subscription-cancel[data-members-continue-subscription]:hover {
     background-color: color(var(--blue) l(-10%));
+    color: #fff;
+    box-shadow: none;
 }
 
 .gh-error-subscription-cancel {
