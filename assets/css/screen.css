@@ -2088,6 +2088,7 @@ Usage (In Ghost editor):
 
 .post-full-content .kg-image {
     max-width: 100%;
+    margin: 0 auto;
 }
 
 /* Preventing full-width image overlap with post image.  */
