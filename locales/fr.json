@@ -1,3 +1,6 @@
 {
-  "Free Post" : "Offert"
+  "Free Post" : "Offert",
+  "No posts" : "Pas d'articles",
+  "% post" : "% articles",
+  "See all % posts" : "Voir les % articles"
 }
