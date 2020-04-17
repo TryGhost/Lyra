@@ -50,11 +50,11 @@ into the {body} of the default.hbs template --}}
                                         <div class="bio">
                                             <h2>{{name}}</h2>
                                             <p>{{bio}}</p>
-                                            <p><a href="{{url}}">{{t "More posts</a> by"}} {{name}}.</p>
+                                            <p><a href="{{url}}">More posts</a> by {{name}}.</p>
                                         </div>
                                         {{else}}
                                         <h2>{{name}}</h2>
-                                        <p>{{t "Read"}} <a href="{{url}}">{{t "more posts</a> by this author."}}</p>
+                                        <p>Read <a href="{{url}}">more posts</a> by this author.</p>
                                         {{/if}}
                                     </div>
                                 </div>
@@ -116,17 +116,17 @@ into the {body} of the default.hbs template --}}
 
                 <section class="post-full-content">
                     <div class="post-content">
-                        <p>{{t "You don't have access to this post on"}} <strong>{{@site.title}}</strong> {{t "at the moment, but if you upgrade your account you'll be able to see the whole thing, as well as all the other posts in the archive! Subscribing only takes a few seconds and will give you immediate access."}}</p>
+                        <p>You don't have access to this post on <strong>{{@site.title}}</strong> at the moment, but if you upgrade your account you'll be able to see the whole thing, as well as all the other posts in the archive! Subscribing only takes a few seconds and will give you immediate access.</p>
                     </div>
                     <aside class="post-upgrade-cta">
                         <div class="post-upgrade-cta-content">
                             {{#if @member}}
-                            <h2>{{t "This post is for paying subscribers only"}}</h2>
+                            <h2>This post is for paying subscribers only</h2>
                             {{else}}
-                            <h2>{{t "This post is for subscribers only"}}</h2>
+                            <h2>This post is for subscribers only</h2>
                             {{/if}}
-                            <a class="button large primary" href="/signup/">{{t "Subscribe now"}}</a>
-                            <p><small>{{t "Already have an account?"}} <a href="/signin/">{{t "Sign in"}}</a></small></p>
+                            <a class="button large primary" href="/signup/">Subscribe now</a>
+                            <p><small>Already have an account? <a href="/signin/">Sign in</a></small></p>
                         </div>
                     </aside>
                 </section>
@@ -154,7 +154,7 @@ into the {body} of the default.hbs template --}}
                 <article class="read-next-card">
                     <header class="read-next-card-header">
                         {{#../primary_tag}}
-                        <h3><span>{{t "More in"}}</span> <a href="{{url}}">{{name}}</a></h3>
+                        <h3><span>More in</span> <a href="{{url}}">{{name}}</a></h3>
                         {{/../primary_tag}}
                     </header>
                     <div class="read-next-card-content">
