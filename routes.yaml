@@ -5,9 +5,9 @@ routes:
 
 collections:
   /:
-    permalink: /{slug}/
+    permalink: /{primary_tag}/{slug}/
     template: index
 
 taxonomies:
   tag: /tag/{slug}/
-  author: /author/{slug}/
+  author: /auteurs/{slug}/
