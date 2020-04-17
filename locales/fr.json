@@ -64,5 +64,12 @@
   "but doesn't have a paid subscription to unlock full access." : "mais n'a pas d'abonnement actif.",
   "Log out" : "Déconnexion",
   "Account" : "Compte",
-  "Signed in as" : "Connecté"
+  "Signed in as" : "Connecté",
+  "Billing info update failed." : "Vos infos n'ont pas été changées.",
+  "Success! Your billing info is updated." : "Vos infos ont bien été mises à jour",
+  "Success! Your account is fully activated, you now have access to all content." : "Merci ! Vous avez maintenant accès à tous les articles.",
+  "Welcome back! You've successfully signed in." : "Ravi de vous revoir ! Vous êtes connecté.",
+  "Great! Next, complete checkout for full access to" : "Bienvenue ! Abonnez-vous maintenant pour accéder à tous les articles de",
+  "You've successfully subscribed to" : "Vous êtes bien abonné à",
+  "This post was a collaboration between" : "Article issu d'une collaboration entre"
 }
