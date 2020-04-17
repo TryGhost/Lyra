@@ -1,6 +1,6 @@
 {
   "Free Post" : "Offert",
-  "No posts" : "Pas d'articles",
+  "No posts" : "Pas encore d'article",
   "% post" : "% article",
   "See all % posts" : "Voir les % articles",
   "More in" : "Plus de",
@@ -18,6 +18,6 @@
   "by" : "de",
   "A collection of" : "Une collection de",
   "posts" : "articles",
-  "% post" : "% article",
-  "% posts" : "% articles"
+  "% posts" : "% articles",
+  "Website" : "Site web"
 }
