@@ -57,9 +57,12 @@
   "Card" : "Carte",
   "Expires" : "Expire le",
   "Next bill date" : "Prochain prélèvement",
-  "Edit billing info" : "Modifier les infos de facturation",
+  "Edit billing info" : "Modifier",
   "Currently, you're not a subscriber" : "Vous n'avez pas accès à tous les articles",
-  "Hey there!" : "Bonjour",
-  "is subscribed to free updates from" : "est abonné pour accéder au contenu gratuit",
-  "but doesn't have a paid subscription to unlock full access." : "mais n'a pas d'abonnement actif."
+  "Hey there!" : "Bonjour !",
+  "is subscribed to free updates from" : "est abonné pour accéder au contenu gratuit de",
+  "but doesn't have a paid subscription to unlock full access." : "mais n'a pas d'abonnement actif.",
+  "Log out" : "Déconnexion",
+  "Account" : "Compte",
+  "Signed in as" : "Connecté"
 }
