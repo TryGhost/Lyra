@@ -2,5 +2,16 @@
   "Free Post" : "Offert",
   "No posts" : "Pas d'articles",
   "% post" : "% articles",
-  "See all % posts" : "Voir les % articles"
+  "See all % posts" : "Voir les % articles",
+  "More in" : "Plus de",
+  "Already have an account?" : "Vous avez déjà un compte ?",
+  "Sign in" : "Connexion",
+  "This post is for subscribers only" : "Vous devez être connecté pour lire cet article",
+  "This post is for paying subscribers only" : "Cet article est réservé aux abonnés",
+  "Subscribe now" : "Je m'inscris",
+  "You don't have access to this post on" : "Vous ne pouvez pas accéder à cet article de",
+  "at the moment, but if you upgrade your account you'll be able to see the whole thing, as well as all the other posts in the archive! Subscribing only takes a few seconds and will give you immediate access." : "pour le moment, mais si vous devenez un de nos membres, vous pourrez le lire ainsi que tous nos autres articles. L'abonnement ne prend que quelques secondes et vous donnera un accès immédiat.",
+  "More posts</a> by" : "Plus d'articles</a> de",
+  "Read" : "Lire",
+  "more posts</a> by this author." : "plus d'articles</a> de cet auteur."
 }
