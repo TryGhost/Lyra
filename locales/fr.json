@@ -22,7 +22,7 @@
   "Website" : "Site web",
   "Log in" : "Connexion",
   "Subscribe" : "Inscription",
-  "Published with" : "Publié avec",
+  "Published with" : "Propulsé par",
   "Signup to" : "Inscription à",
   "Continue" : "Continuer",
   "Already have an account?" : "Déjà inscrit ?",
@@ -34,5 +34,18 @@
   "Send login link" : "Connexion",
   "Don't have an account yet?" : "Vous n'avez pas encore de compte ?",
   "Sign up" : "Inscription",
-  "Check your inbox and click the link to complete signin" : "Cliquez sur le lien qui vient de vous être envoyé par e-mail pour confirmer la connexion"
+  "Check your inbox and click the link to complete signin" : "Cliquez sur le lien qui vient de vous être envoyé par e-mail pour confirmer la connexion",
+  "Choose your subscription" : "Choisissez votre contribution",
+  "Unlock full access to" : "Débloquez tous les articles de",
+  "and see the entire library of members-only content & updates" : "et découvrez l'intégralité du contenu réservé aux membres",
+  "Monthly" : "Mensuel",
+  "month" : "mois",
+  "Full access to all private posts" : "Accès complet à tous les articles",
+  "Regular updates with new content" : "Recevez les nouveaux articles par e-mail",
+  "Support independent publishing" : "Boostez votre préparation du concours",
+  "Simple, secure card payment" : "Abonnement résiliable à tout moment",
+  "Choose this plan" : "Choisir cette offre",
+  "Yearly" : "Annuel",
+  "year" : "an",
+  "One easy payment instead of 12!" : "Économise 75% !"
 }
