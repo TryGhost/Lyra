@@ -1,5 +1,5 @@
 {
-  "Free Post" : "Offert",
+  "Free Post" : "Gratuit",
   "No posts" : "Pas encore d'article",
   "% post" : "% article",
   "See all % posts" : "Voir les % articles",
@@ -22,5 +22,17 @@
   "Website" : "Site web",
   "Log in" : "Connexion",
   "Subscribe" : "Inscription",
-  "Published with" : "Publié avec"
+  "Published with" : "Publié avec",
+  "Signup to" : "Inscription à",
+  "Continue" : "Continuer",
+  "Already have an account?" : "Déjà inscrit ?",
+  "Great!" : "Bienvenue !",
+  "Check your inbox and click the link to confirm your subscription" : "Cliquez sur le lien qui vient de vous être envoyé par e-mail pour confirmer votre inscription",
+  "Please enter a valid email address!" : "Attention, votre e-mail n'est pas valide",
+  "Welcome back!" : "Bonjour !",
+  "Sign into your account again for full access" : "Connectez-vous pour accéder à tous les articles",
+  "Send login link" : "Connexion",
+  "Don't have an account yet?" : "Vous n'avez pas encore de compte ?",
+  "Sign up" : "Inscription",
+  "Check your inbox and click the link to complete signin" : "Cliquez sur le lien qui vient de vous être envoyé par e-mail pour confirmer la connexion"
 }
