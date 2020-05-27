@@ -71,5 +71,6 @@
   "Welcome back! You've successfully signed in." : "Ravi de vous revoir ! Vous êtes connecté.",
   "Great! Next, complete checkout for full access to" : "Bienvenue ! Abonnez-vous maintenant pour accéder à tous les articles de",
   "You've successfully subscribed to" : "Vous êtes bien abonné à",
-  "This post was a collaboration between" : "Article issu d'une collaboration entre"
+  "This post was a collaboration between" : "Article issu d'une collaboration entre",
+  "Unable to sign you in. Please try again." : "Échec de la connexion. Veuillez réessayer."
 }
