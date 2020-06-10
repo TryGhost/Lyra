@@ -111,6 +111,11 @@ into the {body} of the default.hbs template --}}
                     </div>
                 </section>
 
+                <section class="post-full-comments">
+                    {{!-- Display Cove.chat comments --}}
+                    {{> comments}}
+                </section>
+
             {{else}}
             {{!-- if the user does not have access, show them an upgrade CTA --}}
 
