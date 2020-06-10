@@ -1,7 +1,7 @@
 # Lyra
 
 A paid-members publication for Ghost. Can be used with no code knowledge required.
-**NOW** with added [Cove.chat](https://cove.chat/) commenting.
+**NOW** with added [Cove.chat](https://cove.chat/) commenting on posts.
 
 ## Instructions
 
