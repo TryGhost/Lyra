@@ -1,6 +1,7 @@
 # Lyra
 
 A paid-members publication for Ghost. Can be used with no code knowledge required.
+
 **NOW** with added [Cove.chat](https://cove.chat/) commenting on posts.
 
 ## Instructions
@@ -20,5 +21,6 @@ That's it! You now have a Ghost publication which supports free and paid members
 
 ## Copyright & License
 
-Alterations by [Jason Brewster](https://github.com/jdbrew)
-Base Lyra Theme is copyright (c) 2013-2020 Ghost Foundation - Released under the [MIT license](LICENSE).
+The Lyra Theme is copyright (c) 2013-2020 Ghost Foundation - Released under the [MIT license](LICENSE).
+
+Alterations by [Jason Brewster](https://github.com/jdbrew).
