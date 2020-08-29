@@ -90,7 +90,7 @@
         var action = getParameterByName('action');
         var stripe = getParameterByName('stripe');
 
-        $(document).ready(function () {
+        jQuery(document).ready(function ($) {
             if (action == 'subscribe') {
                 $('body').addClass("subscribe-success");
             }
