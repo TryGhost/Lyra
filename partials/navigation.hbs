@@ -5,9 +5,9 @@
         {{/foreach}}
 {{else}}
     {{!-- primary navigation --}}
-    <ul class="nav" role="menu">
+    <ul class="nav">
         {{#foreach navigation}}
-            <li class="{{link_class for=(url) class=(concat "nav-" slug)}}" role="menuitem"><a href="{{url absolute="true"}}">{{label}}</a></li>
+            <li class="{{link_class for=(url) class=(concat "nav-" slug)}}"><a href="{{url absolute="true"}}">{{label}}</a></li>
         {{/foreach}}
     </ul>
 {{/if}}
