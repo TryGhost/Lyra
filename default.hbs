@@ -89,6 +89,7 @@
         // Give the parameter a variable name
         var action = getParameterByName('action');
         var stripe = getParameterByName('stripe');
+        var success = getParameterByName('success');
 
         $(document).ready(function () {
             if (action == 'subscribe') {
@@ -100,8 +101,12 @@
             if (action == 'checkout') {
                 $('body').addClass("signup-success");
             }
-            if (action == 'signin') {
+            // Success === null is here for backwards compatibility, can be removed shortly
+            if (action == 'signin' && (success === null || success === 'true')) {
                 $('body').addClass("signin-success");
+            }
+            if (action == 'signin' && success === 'false') {
+                $('body').addClass("signin-failure");
             }
             if (stripe == 'success') {
                 $('body').addClass("checkout-success");

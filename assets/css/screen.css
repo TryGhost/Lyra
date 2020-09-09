@@ -2647,6 +2647,11 @@ Usage (In Ghost editor):
     visibility: visible;
     transform: translateY(0);
 }
+.signin-failure .notification-signin-failure {
+    visibility: visible;
+    background: color(var(--red) l(-5%));
+    transform: translateY(0);
+}
 .checkout-success .notification-checkout {
     visibility: visible;
     transform: translateY(0);
