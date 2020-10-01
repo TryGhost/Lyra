@@ -16,15 +16,15 @@ into the {body} of the default.hbs template --}}
         <section class="error-message">
             <h1 class="error-code">{{statusCode}}</h1>
             <p class="error-description">{{message}}</p>
-            <a class="error-link" href="{{@site.url}}">Go to the front page →</a>
+            <a class="error-link" href="{{@site.url}}">{{t "Go to the front page"}} →</a>
         </section>
 
         {{#get "posts" limit="3" include="authors,tags"}}
-        <div class="post-feed">
-            {{#foreach posts}}
-            {{> "post-card"}}
-            {{/foreach}}
-        </div>
+            <div class="post-feed">
+                {{#foreach posts}}
+                {{> "post-card"}}
+                {{/foreach}}
+            </div>
         {{/get}}
     </div>
 </main>

@@ -27,16 +27,16 @@
                 </a>
                 <ul class="account-menu-dropdown">
                     <li class="account-info">
-                        <small>Signed in as</small>
+                        <small>{{t "Signed in as"}}</small>
                         <span class="account-email" title="{{@member.email}}">{{@member.email}}</span>
                     </li>
-                    <li><a href="{{@site.url}}/account/">Account</a></li>
-                    <li><a href="#signout" data-members-signout>Log out</a></li>
+                    <li><a href="{{@site.url}}/account/">{{t "Account"}}</a></li>
+                    <li><a href="#signout" data-members-signout>{{t "Log out"}}</a></li>
                 </ul>
             </div>
         {{else}}
-            <a class="signin-link" href="{{@site.url}}/signin/">Log in</a>
-            <a class="button primary small header-cta" href="{{@site.url}}/signup/">Subscribe</a>
+            <a class="signin-link" href="{{@site.url}}/signin/">{{t "Log in"}}</a>
+            <a class="button primary small header-cta" href="{{@site.url}}/signup/">{{t "Subscribe"}}</a>
         {{/if}}
     </div>
 </nav>
