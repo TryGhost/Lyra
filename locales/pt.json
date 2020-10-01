@@ -27,10 +27,14 @@
     "Ref":"Ref",
     "Message":"Mensagem",
     "Go to the front page":"Voltar para a página inicial",
+    "You don't have access to this post on <strong>{sitetitle}</strong> at the moment, but if you upgrade your account you'll be able to see the whole thing, as well as all the other posts in the archive! Subscribing only takes a few seconds and will give you immediate access.":"Você não tem acesso a esta publicação do <strong>{sitetitle}</strong>, mas se você atualizar sua conta terá acesso a todo conteúdo! A inscrição leva apenas alguns segundos e lhe dará acesso imediato.",
+    "This post is for paying subscribers only":"Esta publicação é apenas para assinantes pagantes",
+    "This post is for subscribers only":"Esta publicação é apenas para assinantes",
     "Your account":"Sua conta",
     "Your subscription will expire on ":"Sua assinatura expira em ",
     "If you change your mind in the meantime you can turn auto-renew back on to continue your subscription.":"Se mudar de ideia, entretanto, você pode ativar a renovação automática novamente para continuar sua assinatura.",
     "Hey! You have an active <strong>{sitetitle}</strong> account with access to all areas. Get in touch if have any problems or need some help getting things updated, and thanks for subscribing.":"Ei! Você tem uma conta ativa no <strong>{sitetitle}</strong> com acesso a todo conteúdo. Entre em contato se tiver algum problema ou precisar de ajuda para atualizar, e obrigado por se inscrever.",
+    "Free Post":"Publicação gratuita",
     "Email address":"Endereço de email",
     "Your plan":"Seu plano",
     "Card":"Cartão",
@@ -71,5 +75,9 @@
     "Signed in as":"Logado com",
     "Account":"Conta",
     "Log out":"Sair",
-    "Log in":"Entrar"
+    "Log in":"Entrar",
+    "Home":"Página Inicial",
+    "Published with":"Publicado com",
+    "Signup":"Cadastrar",
+    "A collection of":"Uma coleção de"
 }
