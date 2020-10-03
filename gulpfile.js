@@ -100,8 +100,8 @@ try {
     config = null;
 }
 
-const REPO = 'TryGhost/Casper';
-const USER_AGENT = 'Casper';
+const REPO = 'TryGhost/Lyra';
+const USER_AGENT = 'Lyra';
 const CHANGELOG_PATH = path.join(process.cwd(), '.', 'changelog.md');
 
 const changelog = ({previousVersion}) => {
