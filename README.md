@@ -2,7 +2,7 @@
 
 A paid-members publication for Ghost. Can be used with no code knowledge required.
 
-# Instructions
+# Installation instructions
 
 1. [Download this theme](https://github.com/TryGhost/Lyra/archive/master.zip)
 2. Log into Ghost, and go to the `Design` settings area to upload the zip file
@@ -14,6 +14,15 @@ That's it! You now have a Ghost publication which supports free and paid members
 
 ![screenshot](https://user-images.githubusercontent.com/120485/67228748-1fdd1400-f464-11e9-921f-ecbf5f412ed5.png)
 
+# Upgrade instructions
+
+1. [Download this theme](https://github.com/TryGhost/Lyra/archive/master.zip) and rename the zip for ease of identification in Ghost later.  For example `2020-10-31_Lyra-master.zip`
+2. Log into Ghost, and go to the `Design` settings area to upload the zip file
+3. You will now see two instances of Lyra similar to the screenshot below
+    ![Themes list showing two copies of Lyra](docs/TwoLyraInstances.png)
+4. Ensure your new Lyra theme is active (based on the renamed zip from earlier, `lyra (2020-10-31_Lyra-master)` in the screenshot)
+5. Delete the previous Lyra theme (`lyra (Lyra-master)` in the screenshot)
+6. Upload `routes.yaml` as required (see _Installation instructions_ above)
 
 # Development
 
