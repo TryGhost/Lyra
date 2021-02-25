@@ -45,7 +45,11 @@
 
                         <div class="subscriber-detail">
                             <label class="subscriber-detail-label">Your plan</label>
-                                <span class="subscriber-detail-content">{{plan.currency_symbol}}{{price plan.amount}}/{{plan.interval}}</span>
+                            <span class="subscriber-detail-content">{{price plan}}/{{plan.interval}}</span>
+                            {{!-- <span class="subscriber-detail-content">{{price plan numberFormat="long"}}/{{plan.interval}}</span> --}}
+                            {{!-- <span class="subscriber-detail-content">{{price plan currencyFormat="code"}}/{{plan.interval}}</span> --}}
+                            {{!-- <span class="subscriber-detail-content">{{price currency=plan.currency}}/{{plan.interval}}</span> --}}
+                            {{!-- <span class="subscriber-detail-content">{{price plan.amount currency=plan.currency}}/{{plan.interval}}</span> --}}
                         </div>
 
                         <div class="subscriber-detail">
