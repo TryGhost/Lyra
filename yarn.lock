@@ -122,15 +122,15 @@
     chalk "4.1.0"
     sywac "1.3.0"
 
-"@tryghost/release-utils@0.6.12":
-  version "0.6.12"
-  resolved "https://registry.yarnpkg.com/@tryghost/release-utils/-/release-utils-0.6.12.tgz#a02c725df910053466d11224e81cec0933f500dd"
-  integrity sha512-6G9o8jOFhcQRbaXrw8XsIXzaDPuxkUb7j5bZzdV1qhnBK2X1Wg/dg1xDN8+uR8jJ/BgrngwaGKs3NTAGKbqfBA==
+"@tryghost/release-utils@0.6.13":
+  version "0.6.13"
+  resolved "https://registry.yarnpkg.com/@tryghost/release-utils/-/release-utils-0.6.13.tgz#3445347220812de54539f8c301d04e80132ee6cb"
+  integrity sha512-7tM8qr5UJuFX9TC3JFT1IHxCLw9zK10cT6wKtUXWUZGkWuxKfZObQc3GCI+sJyffqon+Tt6l1F/IqztzU+G6lQ==
   dependencies:
     bluebird "3.7.2"
-    emoji-regex "9.2.1"
+    emoji-regex "9.2.2"
     execa "4.1.0"
-    lodash "4.17.20"
+    lodash "4.17.21"
     request "2.88.2"
     request-promise "4.2.6"
 
@@ -1551,10 +1551,10 @@ electron-to-chromium@^1.3.649:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.681.tgz#facd915ae46a020e8be566a2ecdc0b9444439be9"
   integrity sha512-W6uYvSUTHuyX2DZklIESAqx57jfmGjUkd7Z3RWqLdj9Mmt39ylhBuvFXlskQnvBHj0MYXIeQI+mjiwVddZLSvA==
 
-emoji-regex@9.2.1:
-  version "9.2.1"
-  resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-9.2.1.tgz#c9b25604256bb3428964bead3ab63069d736f7ee"
-  integrity sha512-117l1H6U4X3Krn+MrzYrL57d5H7siRHWraBs7s+LjRuFK7Fe7hJqnJ0skWlinqsycVLU5YAo6L8CsEYQ0V5prg==
+emoji-regex@9.2.2:
+  version "9.2.2"
+  resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-9.2.2.tgz#840c8803b0d8047f4ff0cf963176b32d4ef3ed72"
+  integrity sha512-L18DaJsXSUk2+42pv8mLs5jJT2hqFkFE4j21wOmgbUqsZ2hL72NsUU785g9RXgo3s0ZNgVl42TiHp3ZtOv/Vyg==
 
 encodeurl@~1.0.2:
   version "1.0.2"
@@ -3320,11 +3320,6 @@ lodash@4.17.19, lodash@^4.17.19, lodash@^4.17.4:
   version "4.17.19"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
   integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
-
-lodash@4.17.20:
-  version "4.17.20"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
-  integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
 
 lodash@4.17.21:
   version "4.17.21"
