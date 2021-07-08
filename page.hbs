@@ -36,8 +36,11 @@ into the {body} of the default.hbs template --}}
                             (max-width: 1170px) 1170px,
                             2000px"
                     src="{{img_url feature_image size="xl"}}"
-                    alt="{{title}}"
+                    alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}"
                 />
+                {{#if feature_image_caption}}
+                    <figcaption>{{feature_image_caption}}</figcaption>
+                {{/if}}
             </figure>
             {{/if}}
 
