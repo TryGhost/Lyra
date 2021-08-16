@@ -4,7 +4,7 @@ A paid-members publication for Ghost. Can be used with no code knowledge require
 
 # Instructions
 
-1. [Download this theme](https://github.com/TryGhost/Lyra/archive/master.zip)
+1. [Download this theme](https://github.com/TryGhost/Lyra/archive/main.zip)
 2. Log into Ghost, and go to the `Design` settings area to upload the zip file
 3. Unzip the theme archive on your computer and locate the file called `routes.yaml`
 4. Inside Ghost admin, go to the `Labs` settings area and scroll down until you see the `Custom Routes` section
