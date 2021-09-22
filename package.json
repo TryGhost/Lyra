@@ -45,7 +45,7 @@
     "contributors": "https://github.com/TryGhost/Starter/graphs/contributors",
     "devDependencies": {
         "@tryghost/release-utils": "0.6.15",
-        "autoprefixer": "10.3.4",
+        "autoprefixer": "10.3.5",
         "beeper": "2.1.0",
         "cssnano": "5.0.8",
         "gscan": "4.1.3",
@@ -57,7 +57,7 @@
         "gulp-util": "3.0.8",
         "gulp-watch": "5.0.1",
         "gulp-zip": "5.1.0",
-        "postcss": "8.3.6",
+        "postcss": "8.3.7",
         "postcss-color-function": "4.1.0",
         "postcss-custom-properties": "11.0.0",
         "postcss-easy-import": "3.0.0"
