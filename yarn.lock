@@ -114,6 +114,22 @@
   dependencies:
     "@elastic/elasticsearch" "^7.10.0"
 
+"@tryghost/errors@^0.2.14":
+  version "0.2.14"
+  resolved "https://registry.yarnpkg.com/@tryghost/errors/-/errors-0.2.14.tgz#473baacd07eb6b0a8877ad8a6a006c657ea81f33"
+  integrity sha512-EYaOjI8wVrykgS/WkIW/GhSo2vDaXn710SSfS4e7tehAtFoU/XwzFR4yCYzBAMHaZaciSdT2VmssGlPXZib7Lw==
+  dependencies:
+    "@tryghost/ignition-errors" "^0.1.0"
+    lodash "^4.17.21"
+
+"@tryghost/ignition-errors@^0.1.0":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@tryghost/ignition-errors/-/ignition-errors-0.1.5.tgz#1ad5bc9e169df71360ecc8294571b41d212b0f00"
+  integrity sha512-Cx1nQdrz4NFzEqWxbS20sKfcrIdG0dzyd+7pTuc1ErWMFIe3/nO37Q8yxMSp66HkJ5KYj/tOH8r3pkQRc+whdQ==
+  dependencies:
+    lodash "^4.17.21"
+    uuid "^8.3.2"
+
 "@tryghost/pretty-cli@1.2.18":
   version "1.2.18"
   resolved "https://registry.yarnpkg.com/@tryghost/pretty-cli/-/pretty-cli-1.2.18.tgz#16a2b00750cc6a0ae040832e5d5cadcabdef1acf"
@@ -122,11 +138,12 @@
     chalk "^4.1.0"
     sywac "^1.3.0"
 
-"@tryghost/release-utils@0.6.15":
-  version "0.6.15"
-  resolved "https://registry.yarnpkg.com/@tryghost/release-utils/-/release-utils-0.6.15.tgz#b62adb6f11ab89029f9dc853a60d6a04b7b32d22"
-  integrity sha512-+WZQKLfDDeL7mrv25ByJr1rk3lcOZChEowxfryqq9dIjPrBsWbBTbDfLWT26fyZ0Z/yN7UtlyGPaynWNba2QBQ==
+"@tryghost/release-utils@0.6.16":
+  version "0.6.16"
+  resolved "https://registry.yarnpkg.com/@tryghost/release-utils/-/release-utils-0.6.16.tgz#e7610c24be3498a4782ecbcb611bad8ff0789ded"
+  integrity sha512-DLDyq25mW/aCX7WMZA9wsHrdAEMvzF11/5vRF0SgJJRyX/hk7DpP1nsbqdV7jQwG+QsvhlDFVLRiqP+YNF0fOg==
   dependencies:
+    "@tryghost/errors" "^0.2.14"
     bluebird "^3.7.2"
     emoji-regex "^9.2.2"
     execa "^4.1.0"
@@ -5368,7 +5385,7 @@ utils-merge@1.0.1:
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
 
-uuid@8.3.2:
+uuid@8.3.2, uuid@^8.3.2:
   version "8.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
