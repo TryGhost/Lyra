@@ -47,7 +47,7 @@
         "@tryghost/release-utils": "0.7.10",
         "autoprefixer": "10.4.2",
         "beeper": "2.1.0",
-        "cssnano": "5.0.15",
+        "cssnano": "5.0.16",
         "gscan": "4.1.3",
         "gulp": "4.0.2",
         "gulp-livereload": "4.0.2",
