@@ -130,14 +130,14 @@
     chalk "^4.1.0"
     sywac "^1.3.0"
 
-"@tryghost/release-utils@0.7.10":
-  version "0.7.10"
-  resolved "https://registry.yarnpkg.com/@tryghost/release-utils/-/release-utils-0.7.10.tgz#d523a2ef2d16a6ec58c6fee25973ea2bf2e689d5"
-  integrity sha512-3bMiOs4xxjWi2xjbJ04vilODlsqfHeJMGbNsEdodcYcFxp2NPCPqwzZ1NLS5tRQE915slBUrZWuGyDc6VVeBRw==
+"@tryghost/release-utils@0.7.11":
+  version "0.7.11"
+  resolved "https://registry.yarnpkg.com/@tryghost/release-utils/-/release-utils-0.7.11.tgz#81419cd428d69277929afa9f9fc86de8901f85b4"
+  integrity sha512-zzz3mamhGVN38ttjunNEg055wpIvyRKd3EnbP/Q6H1A/4vAd4Uwha5rxQVrTuKsIIoZyz7g0s813V5PMsyzviw==
   dependencies:
     "@tryghost/errors" "^1.2.1"
     bluebird "^3.7.2"
-    emoji-regex "^9.2.2"
+    emoji-regex "^10.0.0"
     execa "^4.1.0"
     lodash "^4.17.21"
     request "^2.88.2"
@@ -1531,15 +1531,15 @@ electron-to-chromium@^1.4.17:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.29.tgz#a9b85ab888d0122124c9647c04d8dd246fae94b6"
   integrity sha512-N2Jbwxo5Rum8G2YXeUxycs1sv4Qme/ry71HG73bv8BvZl+I/4JtRgK/En+ST/Wh/yF1fqvVCY4jZBgMxnhjtBA==
 
+emoji-regex@^10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-10.0.0.tgz#96559e19f82231b436403e059571241d627c42b8"
+  integrity sha512-KmJa8l6uHi1HrBI34udwlzZY1jOEuID/ft4d8BSSEdRyap7PwBEt910453PJa5MuGvxkLqlt4Uvhu7tttFHViw==
+
 emoji-regex@^8.0.0:
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-8.0.0.tgz#e818fd69ce5ccfcb404594f842963bf53164cc37"
   integrity sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==
-
-emoji-regex@^9.2.2:
-  version "9.2.2"
-  resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-9.2.2.tgz#840c8803b0d8047f4ff0cf963176b32d4ef3ed72"
-  integrity sha512-L18DaJsXSUk2+42pv8mLs5jJT2hqFkFE4j21wOmgbUqsZ2hL72NsUU785g9RXgo3s0ZNgVl42TiHp3ZtOv/Vyg==
 
 encodeurl@~1.0.2:
   version "1.0.2"
