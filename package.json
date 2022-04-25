@@ -45,7 +45,7 @@
     "contributors": "https://github.com/TryGhost/Starter/graphs/contributors",
     "devDependencies": {
         "@tryghost/release-utils": "0.7.13",
-        "autoprefixer": "10.4.4",
+        "autoprefixer": "10.4.5",
         "beeper": "2.1.0",
         "cssnano": "5.1.7",
         "gscan": "4.1.3",
