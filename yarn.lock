@@ -130,10 +130,10 @@
     chalk "^4.1.0"
     sywac "^1.3.0"
 
-"@tryghost/release-utils@0.7.15":
-  version "0.7.15"
-  resolved "https://registry.yarnpkg.com/@tryghost/release-utils/-/release-utils-0.7.15.tgz#6de98ffa208b246dca83b8388d8e89967ae09457"
-  integrity sha512-1TdYsvYubPvUgmIQ9ev5DXATZSpg/KCfcwTAodZG9bH1OZ4rm7cOGxfojDXU2nE4ySaRf5+sJsTcjVc6Syq/JQ==
+"@tryghost/release-utils@0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@tryghost/release-utils/-/release-utils-0.8.0.tgz#2e017e0ed8326252becd9085f97d1dce61984bd6"
+  integrity sha512-3KbxucGpT5N3km5pYBUAJSEhXkOWkb6ABJ7PU0UtOqfmgQRprenAxf1rcSuQK0K/85ezXamVFNkfjZcy3355Fw==
   dependencies:
     "@tryghost/errors" "^1.2.1"
     bluebird "^3.7.2"
