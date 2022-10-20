@@ -1036,7 +1036,6 @@ make sure this only happens on large viewports / desktop-ish devices.
     align-items: center;
     overflow: hidden;
     margin: 25px 0 50px;
-    background: color(var(--lightgrey) l(+10%));
     border-radius: 3px;
 }
 
@@ -2138,7 +2137,7 @@ Usage (In Ghost editor):
     margin: 0;
 }
 
-.post-full-content figcaption {
+figcaption {
     margin: 1.0em auto 0;
     color: color(var(--midgrey) l(-10%));
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -2977,9 +2976,9 @@ textarea:focus {
 }
 
 .button:hover {
-    color: color(var(--blue) l(-15%));
+    color: var(--blue);
     text-decoration: none;
-    box-shadow: inset 0 0 0 1px color(var(--blue) l(-10%));
+    box-shadow: inset 0 0 0 1px var(--blue);
     transition: 0.2s ease;
 }
 
@@ -2990,7 +2989,7 @@ textarea:focus {
 }
 
 .button.primary:hover {
-    background-color: color(var(--blue) l(-10%));
+    background-color: var(--blue);
 }
 
 .site-signup {
@@ -3432,10 +3431,10 @@ form[data-members-form].error .message-error {
 }
 
 .subscription-actions li a:hover {
-    color: color(var(--blue) l(-15%));
+    color: var(--blue);
     text-decoration: none;
     text-decoration: none;
-    box-shadow: inset 0 0 0 1px color(var(--blue) l(-10%));
+    box-shadow: var(--blue);
     transition: 0.2s ease;
 }
 
@@ -3457,7 +3456,7 @@ form[data-members-form].error .message-error {
 
 .gh-subscription-cancel[data-members-continue-subscription]:hover {
     color: #fff;
-    background-color: color(var(--blue) l(-10%));
+    background-color: var(--blue);
     box-shadow: none;
 }
 
@@ -3527,7 +3526,7 @@ form[data-members-form].error .message-error {
     color: #fff;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     text-align: center;
-    background: color(var(--blue) l(-5%));
+    background: var(--blue);
     border-radius: 5px;
 }
 

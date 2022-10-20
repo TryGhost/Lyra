@@ -21,7 +21,7 @@
                 <div class="checkout-plan">
                     <header class="checkout-plan-header">
                         <h3>Monthly</h3>
-                        <span>{{@price.currency_symbol}}</span><strong>{{@price.monthly}}</strong> / month
+                        <strong>{{price currency=@price.currency}}{{@price.monthly}}</strong> / month
                     </header>
                     <div class="checkout-plan-content">
                         <ul>
@@ -36,7 +36,7 @@
                 <div class="checkout-plan">
                     <header class="checkout-plan-header">
                         <h3>Yearly</h3>
-                        <span>{{@price.currency_symbol}}</span><strong>{{@price.yearly}}</strong> / year
+                        <strong>{{price currency=@price.currency}}{{@price.yearly}}</strong> / year
                     </header>
                     <div class="checkout-plan-content">
                         <ul>

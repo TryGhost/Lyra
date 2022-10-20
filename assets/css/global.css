@@ -3,7 +3,7 @@
 
 :root {
     /* Colours */
-    --blue: #3eb0ef;
+    --blue: var(--ghost-accent-color, #3eb0ef);
     --green: #a4d037;
     --purple: #ad26b4;
     --yellow: #fecd35;
@@ -128,6 +128,7 @@ table {
 }
 img {
     max-width: 100%;
+    height: auto;
 }
 html {
     box-sizing: border-box;
@@ -298,7 +299,8 @@ body {
 
 ::selection {
     text-shadow: none;
-    background: color(var(--blue) lightness(+30%));
+    background: var(--blue);
+    color: #fff;
 }
 
 hr {
@@ -416,7 +418,7 @@ blockquote cite a {
 }
 
 a {
-    color: color(var(--blue) l(-5%));
+    color: var(--blue);
     text-decoration: none;
 }
 
