@@ -16,13 +16,16 @@ That's it! You now have a Ghost publication which supports free and paid members
 
 # Upgrade instructions
 
-1. [Download this theme](https://github.com/TryGhost/Lyra/archive/refs/heads/main.zip) and rename the zip for ease of identification in Ghost later.  For example `2020-10-31_Lyra-main.zip`
-2. Log into Ghost, and go to the `Design` settings area to upload the zip file
-3. You will now see two instances of Lyra similar to the screenshot below
+1. [Download this theme](https://github.com/TryGhost/Lyra/archive/refs/heads/main.zip) and rename the zip for ease of identification in Ghost later.  For example `2022-10-20_Lyra-main.zip`
+2. Log into Ghost, 4. go to the `Labs` settings area and scroll down until you see the `Routes` section
+3. Download your current `routes.yaml` file 
+4. Next go to the `Design` settings area and click `Change Theme` at the bottom of the navigation pane
+5. Click the `Upload theme` button in the top right and upload the zip file you downloaded and renamed earlier (for example `2022-10-20_Lyra-main.zip`)
+6. You will now see two instances of Lyra similar to the screenshot below
     ![Themes list showing two copies of Lyra](docs/TwoLyraInstances.png)
-4. Ensure your new Lyra theme is active (based on the renamed zip from earlier, `lyra (2020-10-31_Lyra-main)` in the screenshot)
-5. Delete the previous Lyra theme (`lyra (Lyra-master)` in the screenshot)
-6. Upload `routes.yaml` as required (see _Installation instructions_ above)
+7. Ensure your new Lyra theme is active (based on the renamed zip from earlier, `lyra (2020-10-31_Lyra-main)` in the screenshot)
+8. Delete the previous Lyra theme (`lyra (Lyra-master)` in the screenshot)
+9Upload `routes.yaml` as required (see _Installation instructions_ above)
 
 # Development
 
