@@ -47,7 +47,7 @@
     "@tryghost/release-utils": "0.8.1",
     "autoprefixer": "10.4.14",
     "beeper": "2.1.0",
-    "cssnano": "5.1.15",
+    "cssnano": "7.1.2",
     "gscan": "5.2.4",
     "gulp": "4.0.2",
     "gulp-livereload": "4.0.2",
@@ -59,8 +59,8 @@
     "gulp-zip": "5.1.0",
     "postcss": "8.4.31",
     "postcss-color-function": "4.1.0",
-    "postcss-custom-properties": "11.0.0",
-    "postcss-easy-import": "3.0.0"
+    "postcss-custom-properties": "15.0.0",
+    "postcss-easy-import": "4.0.0"
   },
   "browserslist": [
     "defaults"
