@@ -1,8 +1,4 @@
 {
-  "extends": [
-    "@tryghost:theme"
-  ],
-  "node": {
-    "supportPolicy": ["lts_latest"]
-  }
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["@tryghost"]
 }
