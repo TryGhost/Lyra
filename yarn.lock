@@ -5796,10 +5796,10 @@ postcss-convert-values@^7.0.8:
     browserslist "^4.27.0"
     postcss-value-parser "^4.2.0"
 
-postcss-custom-properties@15.0.0:
-  version "15.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-custom-properties/-/postcss-custom-properties-15.0.0.tgz#7cb95c58b03378e466d80d20f0fdfa04a53f7225"
-  integrity sha512-FsD3VNtFr3qmspvIobDRszK9onKPHp8iHG4Aox2Nnm9SL93uw5GDw4z+NM7zWKiw6U+DSNm24JUm4coyIyanzQ==
+postcss-custom-properties@15.0.1:
+  version "15.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-custom-properties/-/postcss-custom-properties-15.0.1.tgz#d0cff0da504285587ddffa77c934fe654d96893a"
+  integrity sha512-cuyq8sd8dLY0GLbelz1KB8IMIoDECo6RVXMeHeXY2Uw3Q05k/d1GVITdaKLsheqrHbnxlwxzSRZQQ5u+rNtbMg==
   dependencies:
     "@csstools/cascade-layer-name-parser" "^3.0.0"
     "@csstools/css-parser-algorithms" "^4.0.0"
